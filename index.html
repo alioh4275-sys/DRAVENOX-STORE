@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DRAVENOX independent Free Fire mobile sensitivity guides for Android and iPhone.">
+<title>DRAVENOX | Mobile Sensitivity Guides</title>
+<style>
+:root{--bg:#09090c;--panel:#17171e;--text:#f6f6f8;--muted:#b7b7c1;--red:#ff3434;--line:#34343d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#251014 0,#09090c 40%);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px max(20px,calc((100% - 1080px)/2));border-bottom:1px solid var(--line);background:#09090ce8;position:sticky;top:0}
+.logo{font-weight:900;font-size:25px;letter-spacing:2px;color:var(--red)}nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}
+main{max-width:1080px;margin:auto;padding:20px}.hero{text-align:center;padding:70px 10px 55px}.eyebrow{color:var(--red);font-weight:bold;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(36px,7vw,66px);line-height:1.05;margin:15px 0}h2{font-size:30px;line-height:1.2}.red{color:var(--red)}.muted{color:var(--muted)}.hero p{max-width:650px;margin:20px auto 28px}
+.btn,button{display:inline-block;border:0;border-radius:8px;padding:13px 18px;background:var(--red);color:white;font-weight:bold;text-decoration:none;cursor:pointer;font-size:15px}
+.btn.alt{background:#24242d;border:1px solid #4a4a56}.section{padding:32px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.card{background:linear-gradient(150deg,#1c1c24,#121217);border:1px solid var(--line);border-radius:15px;padding:24px}.card h3{margin-top:0}.price{font-size:32px;font-weight:800;margin:10px 0}.card ul{padding-left:20px;color:var(--muted);min-height:100px}.tag{display:inline-block;color:#ff9a9a;background:#36171b;padding:4px 9px;border-radius:30px;font-size:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.step{padding:18px;border-left:3px solid var(--red);background:var(--panel);border-radius:8px}
+.notice{border:1px solid #5b3535;border-radius:12px;padding:16px;color:var(--muted);background:#1a1114}
+footer{text-align:center;border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}
+small{color:var(--muted)}a:focus,button:focus{outline:2px solid white;outline-offset:3px}
+@media(max-width:560px){header{position:static;flex-direction:column}nav a{margin:0 7px}.hero{padding:45px 0}}
+</style>
+</head>
+<body>
+<header><div class="logo">DRAVENOX</div><nav><a href="#guides">Guides</a><a href="#delivery">How it works</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero">
+  <div class="eyebrow">ANDROID • IPHONE • MOBILE GAMING</div>
+  <h1>TRAIN YOUR AIM.<br><span class="red">FIND YOUR SETTINGS.</span></h1>
+  <p class="muted">Practical Free Fire sensitivity guides, HUD suggestions and drag-aim practice routines. Tune your setup for your own device—no cheats, no modified game files, and no fake promises.</p>
+  <a class="btn" href="#guides">Explore the guides</a>
+</section>
+<section id="guides" class="section">
+  <h2>Choose your guide</h2><p class="muted">Digital guides delivered by WhatsApp after payment is confirmed.</p>
+  <div class="grid">
+    <article class="card"><span class="tag">START HERE</span><h3>Starter Guide</h3><p class="muted">A simple setup guide for players who want to start tuning their aim.</p><ul><li>Baseline sensitivity examples</li><li>Drag-aim practice routine</li><li>Settings adjustment worksheet</li></ul><div class="price">KSh 100</div><button onclick="order('Starter Guide',100)">Order on WhatsApp</button></article>
+    <article class="card"><span class="tag">EXTRA PRACTICE</span><h3>Premium Guide</h3><p class="muted">A more complete guide for building and testing a consistent setup.</p><ul><li>Everything in Starter</li><li>Android and iPhone adjustment tips</li><li>HUD and troubleshooting checklist</li></ul><div class="price">KSh 250</div><button onclick="order('Premium Guide',250)">Order on WhatsApp</button></article>
+  </div>
+</section>
+<section id="delivery" class="section"><h2>How ordering works</h2><div class="steps">
+<div class="step"><b>01 — Choose</b><p class="muted">Tap the package you want.</p></div>
+<div class="step"><b>02 — Message</b><p class="muted">WhatsApp opens with your order details.</p></div>
+<div class="step"><b>03 — Pay</b><p class="muted">Ask for the seller's verified M-Pesa payment instructions.</p></div>
+<div class="step"><b>04 — Receive</b><p class="muted">The seller confirms the payment and sends your PDF guide.</p></div>
+</div></section>
+<section class="section"><div class="notice"><b>Honest results matter.</b> Sensitivity differs by game version, phone model, screen size, and player. These are educational starting points, not guaranteed headshots. Never share your M-Pesa PIN, OTP, or game password.</div></section>
+<section id="contact" class="section"><h2>Contact</h2><p class="muted">For orders and support, use the WhatsApp button on a product. Store owner: configure your real WhatsApp number before publishing this website.</p></section>
+</main>
+<footer>© <span id="year"></span> DRAVENOX Sensitivity Store<br>Independent fan-made guide. Not affiliated with or endorsed by Garena. Free Fire is a trademark of its owner.</footer>
+<script>
+/* IMPORTANT: Replace this placeholder with your WhatsApp number in international format.
+   Kenya example format: 2547XXXXXXXX (no +, spaces or dashes). */
+const WHATSAPP_NUMBER = "254724212741";
+function order(product, price) {
+  if (!/^254\d{9}$/.test(WHATSAPP_NUMBER)) {
+    alert("The store owner must configure the WhatsApp number before orders can be sent.");
+    return;
+  }
+  const msg = `Hello DRAVENOX! I would like to order the ${product} for KSh ${price}. Please send the official M-Pesa payment instructions.`;
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+}
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body></html>
