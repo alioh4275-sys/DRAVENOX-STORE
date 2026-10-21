@@ -1,65 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="DRAVENOX independent Free Fire mobile sensitivity guides for Android and iPhone.">
-<title>DRAVENOX | Mobile Sensitivity Guides</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free DRAVENOX Free Fire sensitivity finder with editable starting settings and drag-aim practice tips.">
+<title>DRAVENOX | Free Fire Sensitivity Finder</title>
 <style>
-:root{--bg:#09090c;--panel:#17171e;--text:#f6f6f8;--muted:#b7b7c1;--red:#ff3434;--line:#34343d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#251014 0,#09090c 40%);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}
-header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px max(20px,calc((100% - 1080px)/2));border-bottom:1px solid var(--line);background:#09090ce8;position:sticky;top:0}
-.logo{font-weight:900;font-size:25px;letter-spacing:2px;color:var(--red)}nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}
-main{max-width:1080px;margin:auto;padding:20px}.hero{text-align:center;padding:70px 10px 55px}.eyebrow{color:var(--red);font-weight:bold;letter-spacing:3px;font-size:12px}
-h1{font-size:clamp(36px,7vw,66px);line-height:1.05;margin:15px 0}h2{font-size:30px;line-height:1.2}.red{color:var(--red)}.muted{color:var(--muted)}.hero p{max-width:650px;margin:20px auto 28px}
-.btn,button{display:inline-block;border:0;border-radius:8px;padding:13px 18px;background:var(--red);color:white;font-weight:bold;text-decoration:none;cursor:pointer;font-size:15px}
-.btn.alt{background:#24242d;border:1px solid #4a4a56}.section{padding:32px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
-.card{background:linear-gradient(150deg,#1c1c24,#121217);border:1px solid var(--line);border-radius:15px;padding:24px}.card h3{margin-top:0}.price{font-size:32px;font-weight:800;margin:10px 0}.card ul{padding-left:20px;color:var(--muted);min-height:100px}.tag{display:inline-block;color:#ff9a9a;background:#36171b;padding:4px 9px;border-radius:30px;font-size:12px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.step{padding:18px;border-left:3px solid var(--red);background:var(--panel);border-radius:8px}
-.notice{border:1px solid #5b3535;border-radius:12px;padding:16px;color:var(--muted);background:#1a1114}
-footer{text-align:center;border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}
-small{color:var(--muted)}a:focus,button:focus{outline:2px solid white;outline-offset:3px}
-@media(max-width:560px){header{position:static;flex-direction:column}nav a{margin:0 7px}.hero{padding:45px 0}}
+:root{--bg:#09090c;--panel:#17171e;--text:#f6f6f8;--muted:#b7b7c1;--red:#ff3434;--line:#34343d;--green:#75e0a0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#251014 0,#09090c 42%);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px max(20px,calc((100% - 1080px)/2));border-bottom:1px solid var(--line);background:#09090cf0;position:sticky;top:0;z-index:2}.logo{font-weight:900;font-size:25px;letter-spacing:2px;color:var(--red)}nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}main{max-width:1080px;margin:auto;padding:20px}.hero{text-align:center;padding:62px 10px 48px}.eyebrow{color:var(--red);font-weight:bold;letter-spacing:3px;font-size:12px}h1{font-size:clamp(36px,7vw,66px);line-height:1.05;margin:15px 0}h2{font-size:clamp(25px,4vw,32px);line-height:1.2}.red{color:var(--red)}.muted{color:var(--muted)}.hero p{max-width:700px;margin:20px auto 28px}.btn,button{display:inline-block;border:0;border-radius:8px;padding:12px 17px;background:var(--red);color:white;font-weight:bold;text-decoration:none;cursor:pointer;font-size:15px}.btn.alt,button.alt{background:#24242d;border:1px solid #4a4a56}.section{padding:30px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.card{background:linear-gradient(150deg,#1c1c24,#121217);border:1px solid var(--line);border-radius:15px;padding:22px}.card h3{margin-top:0}.price{font-size:32px;font-weight:800;margin:10px 0}.card ul{padding-left:20px;color:var(--muted)}.tag{display:inline-block;color:#ff9a9a;background:#36171b;padding:4px 9px;border-radius:30px;font-size:12px}.finder{background:linear-gradient(150deg,#1c1c24,#111116);border:1px solid #5a3037;border-radius:16px;padding:clamp(18px,4vw,30px)}.formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}.field label{display:block;font-weight:bold;margin-bottom:7px}.field select{width:100%;background:#0d0d12;color:var(--text);border:1px solid #4a4a56;border-radius:8px;padding:12px;font:inherit}.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}.setting{background:#101015;border:1px solid var(--line);border-radius:10px;padding:13px}.setting-top{display:flex;justify-content:space-between;gap:10px;font-weight:bold}.setting output{color:var(--red);font-weight:900}.setting input{width:100%;accent-color:var(--red);margin-top:12px}.result-note{padding:14px;border:1px solid #5b3535;background:#1a1114;border-radius:10px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.step{padding:18px;border-left:3px solid var(--red);background:var(--panel);border-radius:8px}.notice{border:1px solid #5b3535;border-radius:12px;padding:16px;color:var(--muted);background:#1a1114}footer{text-align:center;border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}small{color:var(--muted)}a:focus,button:focus,select:focus,input:focus{outline:2px solid white;outline-offset:3px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}@media(max-width:560px){header{position:static;flex-direction:column}nav a{margin:0 7px}.hero{padding:42px 0}.values{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="logo">DRAVENOX</div><nav><a href="#guides">Guides</a><a href="#delivery">How it works</a><a href="#contact">Contact</a></nav></header>
+<header><div class="logo">DRAVENOX</div><nav><a href="#finder">Free Finder</a><a href="#guides">Guides</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav></header>
 <main>
-<section class="hero">
-  <div class="eyebrow">ANDROID • IPHONE • MOBILE GAMING</div>
-  <h1>TRAIN YOUR AIM.<br><span class="red">FIND YOUR SETTINGS.</span></h1>
-  <p class="muted">Practical Free Fire sensitivity guides, HUD suggestions and drag-aim practice routines. Tune your setup for your own device—no cheats, no modified game files, and no fake promises.</p>
-  <a class="btn" href="#guides">Explore the guides</a>
-</section>
-<section id="guides" class="section">
-  <h2>Choose your guide</h2><p class="muted">Digital guides delivered by WhatsApp after payment is confirmed.</p>
-  <div class="grid">
-    <article class="card"><span class="tag">START HERE</span><h3>Starter Guide</h3><p class="muted">A simple setup guide for players who want to start tuning their aim.</p><ul><li>Baseline sensitivity examples</li><li>Drag-aim practice routine</li><li>Settings adjustment worksheet</li></ul><div class="price">KSh 100</div><button onclick="order('Starter Guide',100)">Order on WhatsApp</button></article>
-    <article class="card"><span class="tag">EXTRA PRACTICE</span><h3>Premium Guide</h3><p class="muted">A more complete guide for building and testing a consistent setup.</p><ul><li>Everything in Starter</li><li>Android and iPhone adjustment tips</li><li>HUD and troubleshooting checklist</li></ul><div class="price">KSh 250</div><button onclick="order('Premium Guide',250)">Order on WhatsApp</button></article>
-  </div>
-</section>
-<section id="delivery" class="section"><h2>How ordering works</h2><div class="steps">
-<div class="step"><b>01 — Choose</b><p class="muted">Tap the package you want.</p></div>
-<div class="step"><b>02 — Message</b><p class="muted">WhatsApp opens with your order details.</p></div>
-<div class="step"><b>03 — Pay</b><p class="muted">Ask for the seller's verified M-Pesa payment instructions.</p></div>
-<div class="step"><b>04 — Receive</b><p class="muted">The seller confirms the payment and sends your PDF guide.</p></div>
-</div></section>
-<section class="section"><div class="notice"><b>Honest results matter.</b> Sensitivity differs by game version, phone model, screen size, and player. These are educational starting points, not guaranteed headshots. Never share your M-Pesa PIN, OTP, or game password.</div></section>
-<section id="contact" class="section"><h2>Contact</h2><p class="muted">For orders and support, use the WhatsApp button on a product. Store owner: configure your real WhatsApp number before publishing this website.</p></section>
-</main>
-<footer>© <span id="year"></span> DRAVENOX Sensitivity Store<br>Independent fan-made guide. Not affiliated with or endorsed by Garena. Free Fire is a trademark of its owner.</footer>
+<section class="hero"><div class="eyebrow">FREE TOOL • ANDROID • IPHONE • MOBILE GAMING</div><h1>TRAIN YOUR AIM.<br><span class="red">FIND YOUR SETTINGS.</span></h1><p class="muted">Try editable Free Fire sensitivity starting points, then test them in Training Ground. No cheats, modified files, or guaranteed-headshot promises.</p><a class="btn" href="#finder">Try the free finder</a></section>
+<section id="finder" class="section"><h2>Free Sensitivity Finder</h2><p class="muted">Choose your device and aim style. These are community-style starting suggestions—not measured or official settings. The values use a 0–200 scale; if your in-game slider has a different maximum, scale them proportionally.</p>
+<div class="finder"><div class="formgrid">
+<div class="field"><label for="device">Your device</label><select id="device"><option value="infinix">Infinix Hot 60i</option><option value="android">Other Android phone</option><option value="iphone">iPhone</option><option value="emulator">PC emulator</option></select></div>
+<div class="field"><label for="style">Main goal</label><select id="style"><option value="drag">Drag headshots</option><option value="close">Close-range combat</option><option value="balanced">Balanced aim</option></select></div>
+<div class="field"><label for="experience">Experience</label><select id="experience"><option value="advanced" selected>Advanced</option><option value="intermediate">Intermediate</option><option value="beginner">Beginner</option></select></div>
+</div><div class="values" id="settings"></div><div class="actions"><button type="button" id="reset">Reset recommendations</button><button type="button" class="alt" id="copy">Copy my settings</button><button type="button" class="alt" id="whatsapp">Ask DRAVENOX on WhatsApp</button></div><p id="status" class="muted" aria-live="polite"></p><div class="result-note"><b>How to test:</b> Apply the values manually in Free Fire settings. In Training Ground, try 10–15 controlled upward drags at a close target. If aim passes over the head, lower General/Red Dot by 3–5; if it stops below, raise by 3–5. Change one setting at a time.</div></div></section>
+<section id="guides" class="section"><h2>Want a structured practice guide?</h2><p class="muted">The free finder stays free. Optional PDF guides include tips for both Free Fire and Free Fire MAX, with practice routines and worksheets. Orders are currently handled manually on WhatsApp; access is sent after payment is confirmed.</p><div class="grid"><article class="card"><span class="tag">START HERE</span><h3>Starter Guide</h3><p class="muted">A simple setup guide for players tuning their aim.</p><ul><li>Free Fire + Free Fire MAX tips</li><li>Baseline sensitivity examples</li><li>Drag-aim practice routine</li><li>Adjustment worksheet</li></ul><div class="price">KSh 100</div><button onclick="order('Starter Guide',100)">Order on WhatsApp</button></article><article class="card"><span class="tag">EXTRA PRACTICE</span><h3>Premium Guide</h3><p class="muted">A more complete guide to building a consistent setup.</p><ul><li>Everything in Starter</li><li>Separate Free Fire and Free Fire MAX notes</li><li>Device adjustment tips</li><li>HUD and troubleshooting checklist</li></ul><div class="price">KSh 250</div><button onclick="order('Premium Guide',250)">Order on WhatsApp</button></article></div></section>
+<section id="how" class="section"><h2>How to use your settings</h2><div class="steps"><div class="step"><b>01 — Choose</b><p class="muted">Select your phone and aim goal in the free finder.</p></div><div class="step"><b>02 — Copy</b><p class="muted">Copy the suggestions and enter them manually in-game.</p></div><div class="step"><b>03 — Practice</b><p class="muted">Test in Training Ground and adjust by small amounts.</p></div><div class="step"><b>04 — Repeat</b><p class="muted">Keep what feels controlled; settings vary by player.</p></div></div></section>
+<section class="section"><div class="notice"><b>Fair-play note:</b> This tool does not connect to Free Fire, inspect your game, or change settings automatically. It provides editable suggestions only. Sensitivity varies by game version, device, screen, FPS, and personal control. Never share your game password, M-Pesa PIN, or OTP.</div></section>
+<section id="contact" class="section"><h2>Contact</h2><p class="muted">For guide orders or questions, contact DRAVENOX on WhatsApp.</p><button onclick="contactUs()">Contact DRAVENOX</button></section>
+</main><footer>© <span id="year"></span> DRAVENOX Sensitivity Store<br>Independent fan-made guide. Not affiliated with or endorsed by Garena. Free Fire is a trademark of its owner.</footer>
 <script>
-/* IMPORTANT: Replace this placeholder with your WhatsApp number in international format.
-   Kenya example format: 2547XXXXXXXX (no +, spaces or dashes). */
-const WHATSAPP_NUMBER = "254724212741";
-function order(product, price) {
-  if (!/^254\d{9}$/.test(WHATSAPP_NUMBER)) {
-    alert("The store owner must configure the WhatsApp number before orders can be sent.");
-    return;
-  }
-  const msg = `Hello DRAVENOX! I would like to order the ${product} for KSh ${price}. Please send the official M-Pesa payment instructions.`;
-  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
-}
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body></html>
+const WHATSAPP_NUMBER='254724212741';
+const base={infinix:{General:185,'Red Dot':180,'2× Scope':170,'4× Scope':155,'Sniper Scope':95,'Free Look':150},android:{General:180,'Red Dot':175,'2× Scope':165,'4× Scope':150,'Sniper Scope':90,'Free Look':145},iphone:{General:175,'Red Dot':170,'2× Scope':160,'4× Scope':145,'Sniper Scope':85,'Free Look':140},emulator:{General:160,'Red Dot':155,'2× Scope':145,'4× Scope':130,'Sniper Scope':80,'Free Look':130}};
+const labels=['General','Red Dot','2× Scope','4× Scope','Sniper Scope','Free Look'];let current={};
+function recommendations(){let device=document.getElementById('device').value,style=document.getElementById('style').value,experience=document.getElementById('experience').value;current={...base[device]};let styleDelta=style==='drag'?0:style==='close'?5:-5;let expDelta=experience==='beginner'?-10:experience==='intermediate'?-4:0;labels.forEach((k,i)=>{let delta=(i<2?styleDelta:style==='close'&&i<4?2:0)+expDelta;current[k]=Math.max(0,Math.min(200,current[k]+delta));});render();}
+function render(){const box=document.getElementById('settings');box.innerHTML='';labels.forEach(k=>{const div=document.createElement('div');div.className='setting';div.innerHTML=`<div class="setting-top"><label for="s-${labels.indexOf(k)}">${k}</label><output id="o-${labels.indexOf(k)}">${current[k]}</output></div><input id="s-${labels.indexOf(k)}" type="range" min="0" max="200" value="${current[k]}" aria-label="${k} sensitivity">`;box.appendChild(div);div.querySelector('input').addEventListener('input',e=>{current[k]=Number(e.target.value);div.querySelector('output').value=current[k];div.querySelector('output').textContent=current[k];});});}
+function getSummary(){return 'DRAVENOX Free Fire sensitivity suggestions\nDevice: '+document.getElementById('device').selectedOptions[0].text+'\nGoal: '+document.getElementById('style').selectedOptions[0].text+'\nExperience: '+document.getElementById('experience').selectedOptions[0].text+'\n'+labels.map(k=>k+': '+current[k]).join('\n')+'\nNote: starting points only; test and adjust in Training Ground.';}
+document.getElementById('device').addEventListener('change',recommendations);document.getElementById('style').addEventListener('change',recommendations);document.getElementById('experience').addEventListener('change',recommendations);document.getElementById('reset').addEventListener('click',()=>{recommendations();document.getElementById('status').textContent='Recommendations reset.';});
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(getSummary());document.getElementById('status').textContent='Settings copied. Paste them into your notes.';}catch(e){document.getElementById('status').textContent='Clipboard was blocked by your browser. Select and copy the values shown above.';}});
+document.getElementById('whatsapp').addEventListener('click',()=>{const msg='Hello DRAVENOX, please help me test these Free Fire sensitivity suggestions:\n'+getSummary();window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');});
+function order(product,price){const msg=`Hello DRAVENOX! I would like to order the ${product} for KSh ${price}. This guide should cover both Free Fire and Free Fire MAX. Please send the official M-Pesa payment instructions and explain how I will receive the guide after you confirm payment.`;window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');}
+function contactUs(){window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hello DRAVENOX, I have a question about the free sensitivity finder.'),'_blank','noopener');}
+document.getElementById('year').textContent=new Date().getFullYear();recommendations();
+</script></body></html>
