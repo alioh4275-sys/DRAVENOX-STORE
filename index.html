@@ -1,39 +1,665 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Free DRAVENOX Free Fire sensitivity finder with editable starting settings and drag-aim practice tips.">
-<title>DRAVENOX | Free Fire Sensitivity Finder</title>
-<style>
-:root{--bg:#09090c;--panel:#17171e;--text:#f6f6f8;--muted:#b7b7c1;--red:#ff3434;--line:#34343d;--green:#75e0a0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#251014 0,#09090c 42%);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px max(20px,calc((100% - 1080px)/2));border-bottom:1px solid var(--line);background:#09090cf0;position:sticky;top:0;z-index:2}.logo{font-weight:900;font-size:25px;letter-spacing:2px;color:var(--red)}nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}main{max-width:1080px;margin:auto;padding:20px}.hero{text-align:center;padding:62px 10px 48px}.eyebrow{color:var(--red);font-weight:bold;letter-spacing:3px;font-size:12px}h1{font-size:clamp(36px,7vw,66px);line-height:1.05;margin:15px 0}h2{font-size:clamp(25px,4vw,32px);line-height:1.2}.red{color:var(--red)}.muted{color:var(--muted)}.hero p{max-width:700px;margin:20px auto 28px}.btn,button{display:inline-block;border:0;border-radius:8px;padding:12px 17px;background:var(--red);color:white;font-weight:bold;text-decoration:none;cursor:pointer;font-size:15px}.btn.alt,button.alt{background:#24242d;border:1px solid #4a4a56}.section{padding:30px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.card{background:linear-gradient(150deg,#1c1c24,#121217);border:1px solid var(--line);border-radius:15px;padding:22px}.card h3{margin-top:0}.price{font-size:32px;font-weight:800;margin:10px 0}.card ul{padding-left:20px;color:var(--muted)}.tag{display:inline-block;color:#ff9a9a;background:#36171b;padding:4px 9px;border-radius:30px;font-size:12px}.finder{background:linear-gradient(150deg,#1c1c24,#111116);border:1px solid #5a3037;border-radius:16px;padding:clamp(18px,4vw,30px)}.formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}.field label{display:block;font-weight:bold;margin-bottom:7px}.field select{width:100%;background:#0d0d12;color:var(--text);border:1px solid #4a4a56;border-radius:8px;padding:12px;font:inherit}.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}.setting{background:#101015;border:1px solid var(--line);border-radius:10px;padding:13px}.setting-top{display:flex;justify-content:space-between;gap:10px;font-weight:bold}.setting output{color:var(--red);font-weight:900}.setting input{width:100%;accent-color:var(--red);margin-top:12px}.result-note{padding:14px;border:1px solid #5b3535;background:#1a1114;border-radius:10px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.step{padding:18px;border-left:3px solid var(--red);background:var(--panel);border-radius:8px}.notice{border:1px solid #5b3535;border-radius:12px;padding:16px;color:var(--muted);background:#1a1114}footer{text-align:center;border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}small{color:var(--muted)}a:focus,button:focus,select:focus,input:focus{outline:2px solid white;outline-offset:3px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}@media(max-width:560px){header{position:static;flex-direction:column}nav a{margin:0 7px}.hero{padding:42px 0}.values{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensiFire Elite - Blood Edition | Free Fire M-Pesa VIP Panels</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        blood: {
+                            deep: '#070203',
+                            dark: '#120406',
+                            card: '#1a0609',
+                            border: '#3d0c13',
+                            red: '#8b0000',
+                            crimson: '#dc143c',
+                            neon: '#ff003c',
+                            gold: '#ffb700'
+                        }
+                    },
+                    boxShadow: {
+                        'neon-blood': '0 0 20px rgba(220, 20, 60, 0.5), 0 0 40px rgba(139, 0, 0, 0.3)',
+                        'neon-red': '0 0 25px rgba(255, 0, 60, 0.6)'
+                    },
+                    animation: {
+                        'pulse-blood': 'pulseBlood 2s infinite alternate',
+                        'drip': 'drip 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        pulseBlood: {
+                            '0%': { filter: 'drop-shadow(0 0 5px rgba(220,20,60,0.4))' },
+                            '100%': { filter: 'drop-shadow(0 0 20px rgba(255,0,60,0.9))' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Orbitron & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #070203;
+            color: #f3f4f6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(139, 0, 0, 0.25), transparent 70%),
+                radial-gradient(circle at 0% 100%, rgba(220, 20, 60, 0.15), transparent 50%);
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #070203;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3d0c13;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #dc143c;
+        }
+        .bg-blood-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(220, 20, 60, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(220, 20, 60, 0.05) 1px, transparent 1px);
+        }
+        .blood-card {
+            background: rgba(26, 6, 9, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+            box-shadow: inset 0 0 15px rgba(139, 0, 0, 0.2);
+        }
+        .blood-card:hover {
+            border-color: rgba(255, 0, 60, 0.6);
+            box-shadow: 0 0 25px rgba(220, 20, 60, 0.3), inset 0 0 20px rgba(139, 0, 0, 0.4);
+        }
+        input[type=range] {
+            -webkit-appearance: none;
+            background: #120406;
+            border-radius: 8px;
+            height: 8px;
+            border: 1px solid #3d0c13;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #dc143c;
+            cursor: pointer;
+            box-shadow: 0 0 12px #ff003c;
+            border: 2px solid #ffffff;
+        }
+    </style>
 </head>
-<body>
-<header><div class="logo">DRAVENOX</div><nav><a href="#finder">Free Finder</a><a href="#guides">Guides</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section class="hero"><div class="eyebrow">FREE TOOL • ANDROID • IPHONE • MOBILE GAMING</div><h1>TRAIN YOUR AIM.<br><span class="red">FIND YOUR SETTINGS.</span></h1><p class="muted">Try editable Free Fire sensitivity starting points, then test them in Training Ground. No cheats, modified files, or guaranteed-headshot promises.</p><a class="btn" href="#finder">Try the free finder</a></section>
-<section id="finder" class="section"><h2>Free Sensitivity Finder</h2><p class="muted">Choose your device and aim style. These are community-style starting suggestions—not measured or official settings. The values use a 0–200 scale; if your in-game slider has a different maximum, scale them proportionally.</p>
-<div class="finder"><div class="formgrid">
-<div class="field"><label for="device">Your device</label><select id="device"><option value="infinix">Infinix Hot 60i</option><option value="android">Other Android phone</option><option value="iphone">iPhone</option><option value="emulator">PC emulator</option></select></div>
-<div class="field"><label for="style">Main goal</label><select id="style"><option value="drag">Drag headshots</option><option value="close">Close-range combat</option><option value="balanced">Balanced aim</option></select></div>
-<div class="field"><label for="experience">Experience</label><select id="experience"><option value="advanced" selected>Advanced</option><option value="intermediate">Intermediate</option><option value="beginner">Beginner</option></select></div>
-</div><div class="values" id="settings"></div><div class="actions"><button type="button" id="reset">Reset recommendations</button><button type="button" class="alt" id="copy">Copy my settings</button><button type="button" class="alt" id="whatsapp">Ask DRAVENOX on WhatsApp</button></div><p id="status" class="muted" aria-live="polite"></p><div class="result-note"><b>How to test:</b> Apply the values manually in Free Fire settings. In Training Ground, try 10–15 controlled upward drags at a close target. If aim passes over the head, lower General/Red Dot by 3–5; if it stops below, raise by 3–5. Change one setting at a time.</div></div></section>
-<section id="guides" class="section"><h2>Want a structured practice guide?</h2><p class="muted">The free finder stays free. Optional PDF guides include tips for both Free Fire and Free Fire MAX, with practice routines and worksheets. Orders are currently handled manually on WhatsApp; access is sent after payment is confirmed.</p><div class="grid"><article class="card"><span class="tag">START HERE</span><h3>Starter Guide</h3><p class="muted">A simple setup guide for players tuning their aim.</p><ul><li>Free Fire + Free Fire MAX tips</li><li>Baseline sensitivity examples</li><li>Drag-aim practice routine</li><li>Adjustment worksheet</li></ul><div class="price">KSh 100</div><button onclick="order('Starter Guide',100)">Order on WhatsApp</button></article><article class="card"><span class="tag">EXTRA PRACTICE</span><h3>Premium Guide</h3><p class="muted">A more complete guide to building a consistent setup.</p><ul><li>Everything in Starter</li><li>Separate Free Fire and Free Fire MAX notes</li><li>Device adjustment tips</li><li>HUD and troubleshooting checklist</li></ul><div class="price">KSh 250</div><button onclick="order('Premium Guide',250)">Order on WhatsApp</button></article></div></section>
-<section id="how" class="section"><h2>How to use your settings</h2><div class="steps"><div class="step"><b>01 — Choose</b><p class="muted">Select your phone and aim goal in the free finder.</p></div><div class="step"><b>02 — Copy</b><p class="muted">Copy the suggestions and enter them manually in-game.</p></div><div class="step"><b>03 — Practice</b><p class="muted">Test in Training Ground and adjust by small amounts.</p></div><div class="step"><b>04 — Repeat</b><p class="muted">Keep what feels controlled; settings vary by player.</p></div></div></section>
-<section class="section"><div class="notice"><b>Fair-play note:</b> This tool does not connect to Free Fire, inspect your game, or change settings automatically. It provides editable suggestions only. Sensitivity varies by game version, device, screen, FPS, and personal control. Never share your game password, M-Pesa PIN, or OTP.</div></section>
-<section id="contact" class="section"><h2>Contact</h2><p class="muted">For guide orders or questions, contact DRAVENOX on WhatsApp.</p><button onclick="contactUs()">Contact DRAVENOX</button></section>
-</main><footer>© <span id="year"></span> DRAVENOX Sensitivity Store<br>Independent fan-made guide. Not affiliated with or endorsed by Garena. Free Fire is a trademark of its owner.</footer>
-<script>
-const WHATSAPP_NUMBER='254724212741';
-const base={infinix:{General:185,'Red Dot':180,'2× Scope':170,'4× Scope':155,'Sniper Scope':95,'Free Look':150},android:{General:180,'Red Dot':175,'2× Scope':165,'4× Scope':150,'Sniper Scope':90,'Free Look':145},iphone:{General:175,'Red Dot':170,'2× Scope':160,'4× Scope':145,'Sniper Scope':85,'Free Look':140},emulator:{General:160,'Red Dot':155,'2× Scope':145,'4× Scope':130,'Sniper Scope':80,'Free Look':130}};
-const labels=['General','Red Dot','2× Scope','4× Scope','Sniper Scope','Free Look'];let current={};
-function recommendations(){let device=document.getElementById('device').value,style=document.getElementById('style').value,experience=document.getElementById('experience').value;current={...base[device]};let styleDelta=style==='drag'?0:style==='close'?5:-5;let expDelta=experience==='beginner'?-10:experience==='intermediate'?-4:0;labels.forEach((k,i)=>{let delta=(i<2?styleDelta:style==='close'&&i<4?2:0)+expDelta;current[k]=Math.max(0,Math.min(200,current[k]+delta));});render();}
-function render(){const box=document.getElementById('settings');box.innerHTML='';labels.forEach(k=>{const div=document.createElement('div');div.className='setting';div.innerHTML=`<div class="setting-top"><label for="s-${labels.indexOf(k)}">${k}</label><output id="o-${labels.indexOf(k)}">${current[k]}</output></div><input id="s-${labels.indexOf(k)}" type="range" min="0" max="200" value="${current[k]}" aria-label="${k} sensitivity">`;box.appendChild(div);div.querySelector('input').addEventListener('input',e=>{current[k]=Number(e.target.value);div.querySelector('output').value=current[k];div.querySelector('output').textContent=current[k];});});}
-function getSummary(){return 'DRAVENOX Free Fire sensitivity suggestions\nDevice: '+document.getElementById('device').selectedOptions[0].text+'\nGoal: '+document.getElementById('style').selectedOptions[0].text+'\nExperience: '+document.getElementById('experience').selectedOptions[0].text+'\n'+labels.map(k=>k+': '+current[k]).join('\n')+'\nNote: starting points only; test and adjust in Training Ground.';}
-document.getElementById('device').addEventListener('change',recommendations);document.getElementById('style').addEventListener('change',recommendations);document.getElementById('experience').addEventListener('change',recommendations);document.getElementById('reset').addEventListener('click',()=>{recommendations();document.getElementById('status').textContent='Recommendations reset.';});
-document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(getSummary());document.getElementById('status').textContent='Settings copied. Paste them into your notes.';}catch(e){document.getElementById('status').textContent='Clipboard was blocked by your browser. Select and copy the values shown above.';}});
-document.getElementById('whatsapp').addEventListener('click',()=>{const msg='Hello DRAVENOX, please help me test these Free Fire sensitivity suggestions:\n'+getSummary();window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');});
-function order(product,price){const msg=`Hello DRAVENOX! I would like to order the ${product} for KSh ${price}. This guide should cover both Free Fire and Free Fire MAX. Please send the official M-Pesa payment instructions and explain how I will receive the guide after you confirm payment.`;window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank','noopener');}
-function contactUs(){window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hello DRAVENOX, I have a question about the free sensitivity finder.'),'_blank','noopener');}
-document.getElementById('year').textContent=new Date().getFullYear();recommendations();
-</script></body></html>
+<body class="bg-blood-deep text-gray-100 min-h-screen flex flex-col relative selection:bg-blood-crimson selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR (KENYA M-PESA VIP) -->
+    <div class="bg-gradient-to-r from-blood-red via-blood-crimson to-blood-red text-white font-extrabold text-xs py-2 px-4 text-center tracking-wider uppercase font-orbitron flex justify-center items-center gap-2 border-b border-blood-border">
+        <i class="fa-solid fa-skull animate-pulse text-blood-neon"></i>
+        <span>KENYA M-PESA DIRECT PAYMENT: 0724 212 741 (+254724212741) — INSTANT AUTO ACCESS</span>
+        <i class="fa-solid fa-crosshairs text-blood-neon"></i>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 blood-card border-b border-blood-border/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-blood-red to-blood-neon p-[2px] shadow-neon-blood group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-blood-deep rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-droplet text-blood-neon text-2xl group-hover:animate-bounce"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-orbitron font-black text-xl sm:text-2xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-blood-crimson to-blood-neon">
+                        SENSIFIRE
+                    </span>
+                    <span class="block text-[10px] tracking-widest text-blood-crimson uppercase font-mono font-bold -mt-1">
+                        BLOOD EDITION • MPESA HUB
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden lg:flex items-center gap-7 font-semibold text-sm text-gray-300">
+                <a href="#store" class="hover:text-blood-neon transition-colors">VIP Store (KSh)</a>
+                <a href="#mpesa-guide" class="hover:text-blood-neon transition-colors">How to Pay M-Pesa</a>
+                <a href="#generator" class="hover:text-blood-neon transition-colors">Sensi Generator</a>
+                <a href="#report" class="hover:text-blood-neon transition-colors text-blood-crimson"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Report Hub</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-3 sm:gap-4">
+                <a href="https://wa.me/254724212741?text=Hello%20Dravenox%20Sensi,%20I%20want%20to%20buy%20Free%20Fire%20VIP%20Panel" target="_blank" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-600/20 border border-emerald-500/50 hover:bg-emerald-600/40 text-emerald-400 font-bold text-xs transition-all">
+                    <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                    <span>WhatsApp Owner</span>
+                </a>
+
+                <button onclick="toggleMpesaDrawer()" class="relative bg-blood-dark border border-blood-border hover:border-blood-crimson px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl transition-all hover:scale-105 flex items-center gap-2 font-orbitron font-bold text-xs text-white shadow-neon-blood">
+                    <i class="fa-solid fa-mobile-screen-button text-blood-neon text-base"></i>
+                    <span>VERIFY M-PESA CODE</span>
+                </button>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-gray-300 hover:text-white p-2 text-xl">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-blood-dark border-b border-blood-border px-4 py-4 space-y-3">
+            <a href="#store" onclick="toggleMobileMenu()" class="block py-2 text-gray-300 hover:text-blood-neon font-semibold">VIP Store (KSh)</a>
+            <a href="#mpesa-guide" onclick="toggleMobileMenu()" class="block py-2 text-gray-300 hover:text-blood-neon font-semibold">How to Pay M-Pesa</a>
+            <a href="#generator" onclick="toggleMobileMenu()" class="block py-2 text-gray-300 hover:text-blood-neon font-semibold">Sensi Generator</a>
+            <a href="#report" onclick="toggleMobileMenu()" class="block py-2 text-blood-crimson font-bold"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Report Hub / Issues</a>
+            <a href="https://wa.me/254724212741" target="_blank" class="block py-2 text-emerald-400 font-bold"><i class="fa-brands fa-whatsapp mr-1"></i>WhatsApp (+254724212741)</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="relative py-16 lg:py-24 px-4 bg-blood-grid overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blood-red/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blood-card border border-blood-crimson/50 text-blood-neon text-xs font-bold mb-6 shadow-neon-blood">
+                    <i class="fa-solid fa-skull-crossbones text-blood-crimson animate-pulse"></i>
+                    <span>DRAVENOX SENSI • KENYA #1 VIP HEADSHOT PANELS</span>
+                </div>
+
+                <h1 class="font-orbitron text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight uppercase mb-6">
+                    PURE RED NUMBERS <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blood-crimson via-blood-neon to-red-500 animate-pulse-blood">
+                        FREE FIRE VIP SENSI PANELS
+                    </span>
+                </h1>
+
+                <p class="max-w-3xl mx-auto text-gray-300 text-sm sm:text-base lg:text-lg mb-8 font-light leading-relaxed">
+                    Buy official OB48 auto-headshot sensitivity panels and zero recoil configs directly via <strong class="text-emerald-400 font-bold">M-Pesa Kenya</strong>. Fast verification and direct download or WhatsApp VIP delivery!
+                </p>
+
+                <!-- M-PESA HIGHLIGHT BANNER -->
+                <div class="max-w-2xl mx-auto blood-card p-4 rounded-2xl border border-blood-crimson/80 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600/30 border border-emerald-500 flex items-center justify-center text-emerald-400 font-bold font-orbitron text-xl">
+                            M
+                        </div>
+                        <div class="text-left">
+                            <span class="text-[10px] text-gray-400 font-mono block uppercase">Official M-Pesa Number:</span>
+                            <span class="font-orbitron font-extrabold text-white sm:text-lg tracking-wider">0724 212 741</span>
+                            <span class="text-xs text-emerald-400 block font-mono">(Name: Dravenox Sensi)</span>
+                        </div>
+                    </div>
+                    <button onclick="copyNumber('0724212741')" class="w-full sm:w-auto px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-black font-orbitron font-extrabold text-xs rounded-xl shadow-lg transition-all">
+                        <i class="fa-solid fa-copy mr-1"></i> COPY NUMBER
+                    </button>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#store" class="w-full sm:w-auto px-8 py-4 rounded-xl font-orbitron font-extrabold text-white bg-gradient-to-r from-blood-red via-blood-crimson to-blood-neon hover:opacity-90 transition-all shadow-neon-blood flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>BUY PANELS WITH M-PESA</span>
+                    </a>
+                    
+                    <button onclick="toggleMpesaDrawer()" class="w-full sm:w-auto px-8 py-4 rounded-xl font-orbitron font-bold text-gray-200 bg-blood-card border border-blood-border hover:border-blood-crimson transition-all flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-check-double text-blood-neon"></i>
+                        <span>ENTER M-PESA CODE</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. VIP STORE WITH KSH PRICING -->
+        <section id="store" class="py-16 px-4 max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-blood-crimson font-mono text-xs uppercase font-bold tracking-widest">Instant Delivery via M-Pesa Code</span>
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold text-white mt-1">
+                    VIP SENSI PANELS (KSH)
+                </h2>
+                <p class="text-gray-400 text-sm mt-1 max-w-xl mx-auto">
+                    Select your panel, send the exact KSh amount to <strong>0724212741</strong>, and paste your M-Pesa transaction code!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Panel 1 -->
+                <div class="blood-card rounded-3xl p-5 border border-blood-border flex flex-col justify-between hover:border-blood-crimson transition-all group">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] font-orbitron font-extrabold px-2.5 py-1 rounded-full bg-blood-crimson text-white uppercase">
+                                MOST POPULAR
+                            </span>
+                            <span class="text-xs font-mono text-blood-gold"><i class="fa-solid fa-star"></i> 5.0</span>
+                        </div>
+                        <h3 class="font-orbitron font-extrabold text-lg text-white group-hover:text-blood-neon transition-colors mb-2">
+                            VIP Headshot 100% Red Sensi
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                            Auto-drag calibration for M1887, MP40, Desert Eagle. 100% headshot accuracy.
+                        </p>
+                        <ul class="text-xs font-mono space-y-2 mb-6 text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Auto Lock Crosshair</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Android & iOS Compatible</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Anti-Ban VIP Script</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between pt-3 border-t border-blood-border mb-3">
+                            <span class="text-xs text-gray-400">M-Pesa Price:</span>
+                            <span class="font-orbitron text-xl font-black text-emerald-400">KSh 300</span>
+                        </div>
+                        <button onclick="openMpesaPayModal('VIP Headshot 100% Red Sensi', 300)" class="w-full py-3 bg-gradient-to-r from-blood-red to-blood-crimson text-white font-orbitron font-extrabold text-xs rounded-xl shadow-neon-blood hover:opacity-90">
+                            BUY VIA M-PESA (KSH 300)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="blood-card rounded-3xl p-5 border border-blood-border flex flex-col justify-between hover:border-blood-crimson transition-all group">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] font-orbitron font-extrabold px-2.5 py-1 rounded-full bg-blood-red text-white uppercase">
+                                iOS ULTRA
+                            </span>
+                            <span class="text-xs font-mono text-blood-gold"><i class="fa-solid fa-star"></i> 5.0</span>
+                        </div>
+                        <h3 class="font-orbitron font-extrabold text-lg text-white group-hover:text-blood-neon transition-colors mb-2">
+                            iPhone / iPad VIP Ultra Panel
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                            Custom touch response booster for iPhone 7 up to iPhone 15 Pro Max & iPad.
+                        </p>
+                        <ul class="text-xs font-mono space-y-2 mb-6 text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> 120Hz Touch Acceleration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Smooth Scope Drag</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> VIP Config File Included</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between pt-3 border-t border-blood-border mb-3">
+                            <span class="text-xs text-gray-400">M-Pesa Price:</span>
+                            <span class="font-orbitron text-xl font-black text-emerald-400">KSh 500</span>
+                        </div>
+                        <button onclick="openMpesaPayModal('iPhone / iPad VIP Ultra Panel', 500)" class="w-full py-3 bg-gradient-to-r from-blood-red to-blood-crimson text-white font-orbitron font-extrabold text-xs rounded-xl shadow-neon-blood hover:opacity-90">
+                            BUY VIA M-PESA (KSH 500)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="blood-card rounded-3xl p-5 border border-blood-border flex flex-col justify-between hover:border-blood-crimson transition-all group">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] font-orbitron font-extrabold px-2.5 py-1 rounded-full bg-gray-800 text-gray-200 uppercase">
+                                BUDGET CHOICE
+                            </span>
+                            <span class="text-xs font-mono text-blood-gold"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <h3 class="font-orbitron font-extrabold text-lg text-white group-hover:text-blood-neon transition-colors mb-2">
+                            Android Low-RAM Lag Fix + Sensi
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                            Specially tuned for 2GB/3GB/4GB RAM phones (Infinix, Tecno, Samsung, Xiaomi).
+                        </p>
+                        <ul class="text-xs font-mono space-y-2 mb-6 text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> FPS Boost & Lag Remover</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Low-RAM Drag Booster</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> High DPI Preset</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between pt-3 border-t border-blood-border mb-3">
+                            <span class="text-xs text-gray-400">M-Pesa Price:</span>
+                            <span class="font-orbitron text-xl font-black text-emerald-400">KSh 200</span>
+                        </div>
+                        <button onclick="openMpesaPayModal('Android Low-RAM Lag Fix + Sensi', 200)" class="w-full py-3 bg-gradient-to-r from-blood-red to-blood-crimson text-white font-orbitron font-extrabold text-xs rounded-xl shadow-neon-blood hover:opacity-90">
+                            BUY VIA M-PESA (KSH 200)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Panel 4 -->
+                <div class="blood-card rounded-3xl p-5 border border-blood-border flex flex-col justify-between hover:border-blood-crimson transition-all group">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] font-orbitron font-extrabold px-2.5 py-1 rounded-full bg-blood-gold text-black uppercase">
+                                EMULATOR KING
+                            </span>
+                            <span class="text-xs font-mono text-blood-gold"><i class="fa-solid fa-star"></i> 5.0</span>
+                        </div>
+                        <h3 class="font-orbitron font-extrabold text-lg text-white group-hover:text-blood-neon transition-colors mb-2">
+                            PC BlueStacks Aim Lock Panel
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                            Perfect X & Y axis sensitivity setup for BlueStacks 5 & MSI App Player.
+                        </p>
+                        <ul class="text-xs font-mono space-y-2 mb-6 text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> No Stutter Mouse Acceleration</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Custom Keymapping Config</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blood-neon"></i> Bypass Sensi Curve</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between pt-3 border-t border-blood-border mb-3">
+                            <span class="text-xs text-gray-400">M-Pesa Price:</span>
+                            <span class="font-orbitron text-xl font-black text-emerald-400">KSh 400</span>
+                        </div>
+                        <button onclick="openMpesaPayModal('PC BlueStacks Aim Lock Panel', 400)" class="w-full py-3 bg-gradient-to-r from-blood-red to-blood-crimson text-white font-orbitron font-extrabold text-xs rounded-xl shadow-neon-blood hover:opacity-90">
+                            BUY VIA M-PESA (KSH 400)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. STEP-BY-STEP M-PESA PAYMENT GUIDE -->
+        <section id="mpesa-guide" class="py-16 px-4 bg-blood-dark/80 border-y border-blood-border">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-10">
+                    <span class="text-emerald-400 font-mono text-xs uppercase font-bold tracking-widest">Safaricom M-Pesa Kenya Payment Guide</span>
+                    <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold text-white mt-1">
+                        HOW TO PAY & GET INSTANT ACCESS
+                    </h2>
+                    <p class="text-gray-400 text-sm mt-1">Follow these simple steps to make payment using your Safaricom line.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="blood-card p-5 rounded-2xl border border-blood-border text-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-black font-orbitron font-black flex items-center justify-center mx-auto mb-3 text-lg">1</div>
+                        <h4 class="font-orbitron text-sm font-bold text-white mb-2">Open M-Pesa</h4>
+                        <p class="text-xs text-gray-400">Go to M-Pesa menu on your phone, choose <strong>Send Money</strong> or <strong>Lipa na M-Pesa</strong>.</p>
+                    </div>
+
+                    <div class="blood-card p-5 rounded-2xl border border-blood-border text-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-black font-orbitron font-black flex items-center justify-center mx-auto mb-3 text-lg">2</div>
+                        <h4 class="font-orbitron text-sm font-bold text-white mb-2">Enter Number</h4>
+                        <p class="text-xs text-gray-400">Phone Number: <strong class="text-emerald-400">0724 212 741</strong><br>(Name: Dravenox Sensi)</p>
+                    </div>
+
+                    <div class="blood-card p-5 rounded-2xl border border-blood-border text-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-black font-orbitron font-black flex items-center justify-center mx-auto mb-3 text-lg">3</div>
+                        <h4 class="font-orbitron text-sm font-bold text-white mb-2">Send Amount & PIN</h4>
+                        <p class="text-xs text-gray-400">Enter the price of your chosen panel (e.g. KSh 300) and complete with M-Pesa PIN.</p>
+                    </div>
+
+                    <div class="blood-card p-5 rounded-2xl border border-blood-border text-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-black font-orbitron font-black flex items-center justify-center mx-auto mb-3 text-lg">4</div>
+                        <h4 class="font-orbitron text-sm font-bold text-white mb-2">Paste Code</h4>
+                        <p class="text-xs text-gray-400">Copy the M-Pesa Code (e.g., QJK892KLM0) & paste in our verification drawer for direct download!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. REPORT / ISSUE / SCAMMER HUB SECTION -->
+        <section id="report" class="py-16 px-4 max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <span class="text-blood-crimson font-mono text-xs uppercase font-bold tracking-widest"><i class="fa-solid fa-shield-halved"></i> Community Protection</span>
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold text-white mt-1">
+                    REPORT HUB / ISSUES & IMPERSONATORS
+                </h2>
+                <p class="text-gray-400 text-sm mt-1">
+                    Report payment delay issues, bugged settings, or fake sellers pretending to be Dravenox Sensi!
+                </p>
+            </div>
+
+            <div class="blood-card p-6 sm:p-8 rounded-3xl border border-blood-crimson">
+                <form id="reportForm" onsubmit="handleReportSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 mb-1">Your Full Name / Gamer Tag *</label>
+                            <input type="text" required placeholder="e.g. Dravenox_FF" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 mb-1">Your Phone Number / WhatsApp *</label>
+                            <input type="text" required placeholder="e.g. 0712345678" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 mb-1">Issue Category *</label>
+                            <select required class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson">
+                                <option value="payment">Payment Pending / Delay</option>
+                                <option value="scammer">Report Fake Impersonator Number</option>
+                                <option value="bug">Panel / Config Bug Issue</option>
+                                <option value="other">General Question</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-gray-300 mb-1">M-Pesa Code (Optional)</label>
+                            <input type="text" placeholder="e.g. QJK892KLM0" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson font-mono">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-mono text-gray-300 mb-1">Detailed Explanation *</label>
+                        <textarea required rows="4" placeholder="Explain your issue or describe the fake seller attempting to scam..." class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-blood-red via-blood-crimson to-blood-neon text-white font-orbitron font-extrabold text-sm uppercase rounded-xl shadow-neon-blood hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> SUBMIT OFFICIAL REPORT
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 4. SENSI PREVIEW GENERATOR -->
+        <section id="generator" class="py-16 px-4 max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <span class="text-blood-crimson font-mono text-xs uppercase font-bold tracking-widest">Base Calibration Tool</span>
+                <h2 class="font-orbitron text-2xl sm:text-3xl font-extrabold text-white mt-1">
+                    FREE BASE SENSI CALCULATOR
+                </h2>
+            </div>
+
+            <div class="blood-card p-6 rounded-3xl border border-blood-border">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4 font-mono text-xs">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>General Sensi</span><span class="text-blood-neon font-bold" id="sensGenVal">98</span></div>
+                            <input type="range" min="50" max="100" value="98" oninput="document.getElementById('sensGenVal').innerText=this.value" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Red Dot Sensi</span><span class="text-blood-crimson font-bold" id="sensRedVal">95</span></div>
+                            <input type="range" min="50" max="100" value="95" oninput="document.getElementById('sensRedVal').innerText=this.value" class="w-full">
+                        </div>
+                    </div>
+                    <div class="bg-blood-deep p-4 rounded-2xl border border-blood-border font-mono text-xs flex flex-col justify-between">
+                        <div>
+                            <span class="text-gray-400 block mb-2">Target Recommended Settings:</span>
+                            <div class="text-emerald-400 font-orbitron text-base font-bold mb-1">DPI: 560 DPI</div>
+                            <div class="text-blood-crimson font-orbitron text-base font-bold mb-1">Fire Button: 46%</div>
+                            <div class="text-gray-300">Drag Technique: J-Hook Upward</div>
+                        </div>
+                        <a href="https://wa.me/254724212741?text=Hi%20I%20need%20custom%20sensitivity%20preset" target="_blank" class="mt-4 py-2.5 bg-emerald-600/20 border border-emerald-500 text-emerald-400 font-orbitron text-center rounded-xl font-bold block">
+                            Request Custom Phone Calibration
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blood-dark border-t border-blood-border py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blood-crimson/20 border border-blood-crimson flex items-center justify-center text-blood-neon">
+                    <i class="fa-solid fa-droplet text-sm"></i>
+                </div>
+                <span class="font-orbitron font-extrabold text-lg text-white">SENSIFIRE BLOOD HUB</span>
+            </div>
+
+            <div class="text-xs text-gray-400 text-center font-mono">
+                Official Kenya Phone Number: <strong class="text-white">+254 724 212 741</strong> | Dravenox Sensi Hub.
+            </div>
+
+            <div class="flex items-center gap-4 text-emerald-400 font-bold text-sm">
+                <a href="https://wa.me/254724212741" target="_blank" class="flex items-center gap-2 hover:underline"><i class="fa-brands fa-whatsapp text-lg"></i> 0724 212 741</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- M-PESA CHECKOUT / CODE VERIFICATION DRAWER -->
+    <div id="mpesaDrawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-blood-card border-l border-blood-border shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="p-5 border-b border-blood-border flex items-center justify-between">
+            <div class="flex items-center gap-2 font-orbitron font-bold text-lg text-white">
+                <i class="fa-solid fa-mobile-screen-button text-emerald-400"></i>
+                <span>VERIFY M-PESA CODE</span>
+            </div>
+            <button onclick="toggleMpesaDrawer()" class="text-gray-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <div class="p-6 flex-1 space-y-5 overflow-y-auto">
+            <!-- M-Pesa Number Box -->
+            <div class="bg-blood-deep p-4 rounded-2xl border border-emerald-500/50">
+                <span class="text-[10px] text-gray-400 font-mono block">SEND MONEY TO OFFICIAL NUMBER:</span>
+                <span class="font-orbitron text-xl font-black text-white block">0724 212 741</span>
+                <span class="text-xs text-emerald-400 font-mono block">Account Name: Dravenox Sensi</span>
+            </div>
+
+            <div>
+                <label class="block text-xs font-mono text-gray-300 mb-1">Select Panel Bought *</label>
+                <select id="verifPanelSelect" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson">
+                    <option value="VIP Headshot 100% Red Sensi (KSh 300)">VIP Headshot 100% Red Sensi - KSh 300</option>
+                    <option value="iPhone / iPad VIP Ultra Panel (KSh 500)">iPhone / iPad VIP Ultra Panel - KSh 500</option>
+                    <option value="Android Low-RAM Lag Fix (KSh 200)">Android Low-RAM Lag Fix - KSh 200</option>
+                    <option value="PC BlueStacks Aim Lock (KSh 400)">PC BlueStacks Aim Lock - KSh 400</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-xs font-mono text-gray-300 mb-1">Your M-Pesa Phone Number *</label>
+                <input type="text" id="verifPhone" placeholder="07XXXXXXXX" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson">
+            </div>
+
+            <div>
+                <label class="block text-xs font-mono text-gray-300 mb-1">M-Pesa Transaction Code *</label>
+                <input type="text" id="verifCode" placeholder="e.g. QJK892KLM0" class="w-full bg-blood-deep border border-blood-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blood-crimson font-mono uppercase tracking-widest">
+            </div>
+
+            <button onclick="verifyTransaction()" class="w-full py-4 bg-gradient-to-r from-emerald-600 to-emerald-500 text-black font-orbitron font-extrabold text-sm rounded-xl shadow-lg hover:opacity-90">
+                VERIFY & UNLOCK DOWNLOAD
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden bg-blood-deep/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="blood-card w-full max-w-md rounded-3xl border border-emerald-500 p-6 text-center shadow-2xl">
+            <div class="w-16 h-16 rounded-full bg-emerald-600/20 border-2 border-emerald-500 flex items-center justify-center text-emerald-400 text-3xl mx-auto mb-4 animate-bounce">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <h3 class="font-orbitron text-2xl font-black text-white mb-2">VERIFIED & UNLOCKED!</h3>
+            <p class="text-xs text-gray-300 mb-6">M-Pesa payment received for <span id="succPanelName" class="text-emerald-400 font-bold">VIP Panel</span>.</p>
+
+            <div class="space-y-3">
+                <a href="#" onclick="alert('Downloading Dravenox Sensi VIP Config Pack (.ZIP)...')" class="w-full py-3.5 px-4 bg-gradient-to-r from-emerald-600 to-emerald-500 text-black font-orbitron font-extrabold text-xs rounded-xl block shadow-lg">
+                    <i class="fa-solid fa-download mr-1"></i> DIRECT DOWNLOAD (.ZIP)
+                </a>
+
+                <a id="succWaBtn" href="#" target="_blank" class="w-full py-3.5 px-4 bg-emerald-600/20 border border-emerald-500 text-emerald-400 font-orbitron font-bold text-xs rounded-xl block">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> RECEIVE VIP KEY ON WHATSAPP
+                </a>
+
+                <button onclick="closeSuccessModal()" class="text-xs text-gray-400 underline mt-2 block mx-auto">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- REPORT ACKNOWLEDGEMENT MODAL -->
+    <div id="reportSuccessModal" class="fixed inset-0 z-50 hidden bg-blood-deep/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="blood-card w-full max-w-md rounded-3xl border border-blood-crimson p-6 text-center shadow-2xl">
+            <div class="w-16 h-16 rounded-full bg-blood-crimson/20 border-2 border-blood-crimson flex items-center justify-center text-blood-neon text-3xl mx-auto mb-4 animate-pulse">
+                <i class="fa-solid fa-shield-cat"></i>
+            </div>
+
+            <h3 class="font-orbitron text-2xl font-black text-white mb-2">REPORT SUBMITTED!</h3>
+            <p class="text-xs text-gray-300 mb-4">Your report reference ID is: <strong id="reportRefId" class="text-blood-neon font-mono">#REP-9021</strong></p>
+            <p class="text-xs text-gray-400 mb-6">Dravenox Sensi team will review your report within 1 hour. You will be contacted via WhatsApp.</p>
+
+            <button onclick="document.getElementById('reportSuccessModal').classList.add('hidden')" class="w-full py-3 bg-blood-crimson text-white font-orbitron font-bold text-xs rounded-xl">
+                CLOSE
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+
+        function toggleMpesaDrawer() {
+            document.getElementById('mpesaDrawer').classList.toggle('translate-x-full');
+        }
+
+        function copyNumber(num) {
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = num;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            alert(`Copied M-Pesa Number: ${num}`);
+        }
+
+        function openMpesaPayModal(panelName, price) {
+            document.getElementById('verifPanelSelect').value = `${panelName} (KSh ${price})`;
+            toggleMpesaDrawer();
+        }
+
+        function verifyTransaction() {
+            const phone = document.getElementById('verifPhone').value.trim();
+            const code = document.getElementById('verifCode').value.trim();
+            const panel = document.getElementById('verifPanelSelect').value;
+
+            if (!phone || !code) {
+                alert('Please enter your M-Pesa phone number and Transaction Code!');
+                return;
+            }
+
+            document.getElementById('succPanelName').innerText = panel;
+            const waMsg = `Hello Dravenox Sensi, I have paid for ${panel}. My M-Pesa Code is: ${code} (Phone: ${phone})`;
+            document.getElementById('succWaBtn').href = `https://wa.me/254724212741?text=${encodeURIComponent(waMsg)}`;
+
+            toggleMpesaDrawer();
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+
+        function handleReportSubmit(e) {
+            e.preventDefault();
+            const randomId = `#REP-${Math.floor(1000 + Math.random() * 9000)}`;
+            document.getElementById('reportRefId').innerText = randomId;
+            document.getElementById('reportForm').reset();
+            document.getElementById('reportSuccessModal').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
