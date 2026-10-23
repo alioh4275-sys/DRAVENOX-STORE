@@ -1,1031 +1,466 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SensiFire Elite | Halloween Ghost Edition - Free Fire VIP Panels</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Creepster, Orbitron & Rajdhani -->
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            red: '#ff003c',
-                            darkRed: '#7f0019',
-                            ghost: '#e2e8f0',
-                            glow: '#ff1e43',
-                            bg: '#050204',
-                            cardBg: 'rgba(12, 5, 18, 0.88)',
-                            border: 'rgba(255, 0, 60, 0.35)'
-                        }
-                    },
-                    fontFamily: {
-                        horror: ['Creepster', 'cursive'],
-                        tech: ['Orbitron', 'sans-serif'],
-                        body: ['Rajdhani', 'sans-serif']
-                    },
-                    animation: {
-                        'pulse-glow': 'pulseGlow 2.5s infinite ease-in-out',
-                        'float': 'float 4s infinite ease-in-out',
-                        'spooky-spin': 'spookySpin 12s linear infinite'
-                    },
-                    keyframes: {
-                        pulseGlow: {
-                            '0%, 100%': { boxShadow: '0 0 15px rgba(255,0,60,0.4), inset 0 0 10px rgba(255,0,60,0.2)' },
-                            '50%': { boxShadow: '0 0 35px rgba(255,0,60,0.85), inset 0 0 20px rgba(255,0,60,0.5)' }
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-12px)' }
-                        },
-                        spookySpin: {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg)' }
-                        }
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SensiFire Elite - Free Fire Downloads & VIP Headshot Panels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            blood: '#dc2626',
+            ghost: '#f8fafc',
+            spectral: '#991b1b',
+            darkvoid: '#050204',
+          },
+          fontFamily: {
+            halloween: ['Creepster', 'cursive'],
+            cyber: ['Orbitron', 'sans-serif'],
+            body: ['Rajdhani', 'sans-serif'],
+          }
         }
-    </script>
-    <style>
-        body {
-            background-color: #050204;
-            color: #f1f5f9;
-            font-family: 'Rajdhani', sans-serif;
-            overflow-x: hidden;
-        }
-
-        /* Hexagon Pattern Overlay */
-        .hex-overlay {
-            background-image: radial-gradient(rgba(255, 0, 60, 0.15) 1px, transparent 0);
-            background-size: 24px 24px;
-        }
-
-        /* Ghost Neon Glow Typography */
-        .ghost-title {
-            text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c, 0 0 45px #7f0019;
-        }
-        
-        .ghost-subglow {
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #050204;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #7f0019;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ff003c;
-        }
-
-        /* Glassmorphic Cyber Cards */
-        .cyber-card {
-            background: rgba(14, 6, 20, 0.88);
-            backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 0, 60, 0.28);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .cyber-card:hover {
-            border-color: #ff003c;
-            transform: translateY(-5px);
-            box-shadow: 0 12px 35px -5px rgba(255, 0, 60, 0.45);
-        }
-
-        /* Pulsing Spectral Gradient Border */
-        .spectral-border {
-            position: relative;
-        }
-        .spectral-border::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: linear-gradient(45deg, #ff003c, #000, #ff003c, #7f0019);
-            border-radius: inherit;
-            z-index: -1;
-            opacity: 0.6;
-            animation: borderPulse 3s ease infinite;
-        }
-
-        @keyframes borderPulse {
-            0%, 100% { opacity: 0.4; filter: blur(2px); }
-            50% { opacity: 0.95; filter: blur(7px); }
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #050204;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    .ghost-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(220, 38, 38, 0.15), transparent 70%),
+                  radial-gradient(circle at 80% 80%, rgba(153, 27, 27, 0.1), transparent 50%);
+    }
+    .ghost-silhouette {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(220,38,38,0.08) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: pulseGhost 6s infinite ease-in-out;
+    }
+    @keyframes pulseGhost {
+      0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(0.95); }
+      50% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.05); }
+    }
+    .neon-border {
+      box-shadow: 0 0 15px rgba(220, 38, 38, 0.4), inset 0 0 10px rgba(220, 38, 38, 0.2);
+    }
+    .neon-text {
+      text-shadow: 0 0 10px rgba(220, 38, 38, 0.8), 0 0 20px rgba(153, 27, 27, 0.6);
+    }
+  </style>
 </head>
-<body class="min-h-screen relative flex flex-col justify-between select-none">
+<body class="ghost-bg font-body min-h-screen relative antialiased selection:bg-blood selection:text-white">
 
-    <!-- 1. ILLUMINATED HALLOWEEN ENTRY GATE PORTAL -->
-    <div id="entryPortal" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/95 backdrop-blur-2xl transition-opacity duration-700 p-6">
-        <div class="relative flex flex-col items-center text-center max-w-lg mx-auto">
-            
-            <!-- Animated Glowing Ring -->
-            <div class="relative w-44 h-44 mb-8 flex items-center justify-center">
-                <div class="absolute inset-0 rounded-full border-4 border-dashed border-brand-red animate-spooky-spin opacity-80 shadow-[0_0_40px_#ff003c]"></div>
-                <i class="fa-solid fa-ghost text-7xl text-brand-red animate-float ghost-title"></i>
-            </div>
+  <div class="ghost-silhouette"></div>
 
-            <h1 class="font-horror text-5xl sm:text-6xl tracking-widest text-brand-red ghost-title mb-2">SENSIFIRE ELITE</h1>
-            <p class="font-tech text-xs sm:text-sm tracking-widest text-slate-300 uppercase mb-8">Halloween Ghost VIP Portal Initialization</p>
-
-            <button onclick="enterWebsitePortal()" class="group relative px-10 py-4 rounded-2xl bg-gradient-to-r from-brand-red via-red-600 to-brand-darkRed text-white font-tech font-extrabold text-sm tracking-widest shadow-[0_0_30px_rgba(255,0,60,0.6)] hover:shadow-[0_0_50px_rgba(255,0,60,0.9)] hover:scale-105 transition-all duration-300 flex items-center gap-3">
-                <i class="fa-solid fa-skull text-lg animate-pulse"></i>
-                <span>ENTER VIP PORTAL</span>
-            </button>
-        </div>
+  <!-- ENTRY GATE MODAL -->
+  <div id="entryGate" class="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 backdrop-blur-md">
+    <div class="text-center max-w-lg border border-red-900/50 p-8 rounded-2xl bg-darkvoid/90 neon-border relative overflow-hidden">
+      <div class="w-24 h-24 mx-auto mb-4 relative flex items-center justify-center">
+        <i class="fa-solid font-ghost fa-ghost text-6xl text-blood animate-bounce"></i>
+      </div>
+      <h1 class="font-halloween text-5xl text-blood neon-text mb-2">SENSIFIRE ELITE</h1>
+      <p class="font-cyber text-gray-400 text-sm mb-6">HALLOWEEN VIP HUB & FREE FIRE DOWNLOAD PORTAL</p>
+      <button onclick="enterSite()" class="w-full py-4 bg-gradient-to-r from-red-700 to-blood hover:from-blood hover:to-red-600 text-white font-cyber font-bold rounded-xl transition-all transform hover:scale-105 shadow-lg shadow-red-900/50 flex items-center justify-center gap-3">
+        <i class="fa-solid fa-skull"></i> ENTER VIP PORTAL
+      </button>
     </div>
+  </div>
 
-    <!-- Dynamic Canvas Particle Background -->
-    <canvas id="bgCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
-    <div class="fixed inset-0 hex-overlay pointer-events-none z-0"></div>
+  <!-- NAVIGATION BAR -->
+  <nav class="sticky top-0 z-40 bg-darkvoid/80 backdrop-blur-lg border-b border-red-900/30">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-ghost text-2xl text-blood animate-pulse"></i>
+        <span class="font-halloween text-2xl text-blood tracking-wider">SENSIFIRE</span>
+      </div>
 
-    <!-- 2. NAVIGATION HEADER -->
-    <header class="sticky top-0 z-50 bg-black/85 backdrop-blur-md border-b border-brand-border/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            
-            <!-- Logo -->
-            <div class="flex items-center space-x-3 cursor-pointer" onclick="scrollToSection('hero')">
-                <i class="fa-solid font-horror text-4xl text-brand-red animate-pulse flex items-center justify-center">
-                    <i class="fa-solid fa-ghost"></i>
-                </i>
-                <div>
-                    <h1 class="font-horror text-2xl sm:text-3xl tracking-widest text-brand-red ghost-title leading-none">SENSIFIRE</h1>
-                    <p class="font-tech text-[10px] tracking-widest text-slate-400 uppercase">Halloween Ghost VIP Portal</p>
-                </div>
-            </div>
+      <div class="hidden md:flex items-center gap-6 font-cyber text-sm">
+        <a href="#downloads" class="hover:text-blood transition-colors">Free Games</a>
+        <a href="#vip-panels" class="hover:text-blood transition-colors">VIP Panels</a>
+        <a href="#generator" class="hover:text-blood transition-colors">Sensi Generator</a>
+      </div>
 
-            <!-- Navigation Links -->
-            <nav class="hidden md:flex items-center space-x-8 font-tech text-sm tracking-wider">
-                <button onclick="scrollToSection('downloads')" class="hover:text-brand-red transition-colors flex items-center gap-2 sfx-hover"><i class="fa-solid fa-download text-xs"></i> Downloads</button>
-                <button onclick="scrollToSection('panels')" class="hover:text-brand-red transition-colors flex items-center gap-2 sfx-hover"><i class="fa-solid fa-shield-halved text-xs"></i> VIP Panels</button>
-                <button onclick="scrollToSection('sensi-gen')" class="hover:text-brand-red transition-colors flex items-center gap-2 sfx-hover"><i class="fa-solid fa-crosshair text-xs"></i> Sensi Lab</button>
-                <button onclick="scrollToSection('support')" class="hover:text-brand-red transition-colors flex items-center gap-2 sfx-hover"><i class="fa-solid fa-headset text-xs"></i> Support</button>
-            </nav>
-
-            <!-- Action Controls -->
-            <div class="flex items-center gap-3">
-                <!-- Sound Toggle -->
-                <button id="soundToggleBtn" onclick="toggleAudio()" class="sfx-click p-2.5 rounded-lg border border-brand-border bg-black/50 hover:bg-brand-red/20 text-slate-300 hover:text-brand-red transition-all flex items-center gap-2" title="Toggle SFX">
-                    <i id="soundIcon" class="fa-solid fa-volume-high text-brand-red"></i>
-                    <span id="soundLabel" class="hidden lg:inline text-xs font-tech">SFX ON</span>
-                </button>
-
-                <!-- Discord Community Link -->
-                <a href="https://discord.gg/freefire" target="_blank" rel="noopener noreferrer" class="sfx-click hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/50 border border-indigo-500/50 text-indigo-200 text-xs font-tech transition-all">
-                    <i class="fa-brands fa-discord text-sm"></i>
-                    <span>Discord VIP</span>
-                </a>
-
-                <!-- User Account Login -->
-                <button onclick="openLoginModal()" class="sfx-click px-4 py-2 rounded-lg bg-gradient-to-r from-brand-red to-brand-darkRed text-white font-tech text-xs tracking-wider font-bold shadow-lg shadow-brand-red/30 hover:shadow-brand-red/60 hover:scale-105 transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-user-ghost"></i>
-                    <span id="navUserStatus">VIP LOGIN</span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- 3. MAIN SITE BODY -->
-    <main class="relative z-10 flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
-
-        <!-- HERO SECTION -->
-        <section id="hero" class="text-center py-12 relative overflow-hidden rounded-3xl border border-brand-border/40 bg-gradient-to-b from-brand-darkRed/20 via-black/80 to-black/90 p-8 sm:p-12">
-            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-red/20 rounded-full blur-3xl pointer-events-none"></div>
-            
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-red/50 bg-brand-red/10 text-brand-red font-tech text-xs tracking-widest uppercase mb-6 animate-pulse">
-                <i class="fa-solid fa-skull"></i> Spectral Season 2026 Edition
-            </div>
-
-            <h1 class="font-horror text-5xl sm:text-7xl lg:text-8xl tracking-wider text-brand-red ghost-title mb-4">
-                SENSIFIRE VIP PANELS
-            </h1>
-            <p class="font-tech text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-medium tracking-wide">
-                Dominate Free Fire & Free Fire MAX with Ghost-Tier Headshot Precision, zero recoil configs, and undetectable VIP Injector Panels.
-            </p>
-
-            <!-- Quick Action Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-10">
-                <div class="p-4 rounded-xl bg-black/60 border border-brand-border/30 backdrop-blur-sm">
-                    <i class="fa-solid fa-crosshair text-2xl text-brand-red mb-1"></i>
-                    <h4 class="font-tech text-sm font-bold text-white">99.8% Auto-Headshot</h4>
-                    <p class="text-xs text-slate-400">Precision Drag Sensi</p>
-                </div>
-                <div class="p-4 rounded-xl bg-black/60 border border-brand-border/30 backdrop-blur-sm">
-                    <i class="fa-solid fa-shield-cat text-2xl text-brand-red mb-1"></i>
-                    <h4 class="font-tech text-sm font-bold text-white">Anti-Ban V12</h4>
-                    <p class="text-xs text-slate-400">Bypass Security Engine</p>
-                </div>
-                <div class="p-4 rounded-xl bg-black/60 border border-brand-border/30 backdrop-blur-sm">
-                    <i class="fa-solid fa-bolt text-2xl text-brand-red mb-1"></i>
-                    <h4 class="font-tech text-sm font-bold text-white">Instant Key Generator</h4>
-                    <p class="text-xs text-slate-400">M-Pesa Verified Panel</p>
-                </div>
-                <div class="p-4 rounded-xl bg-black/60 border border-brand-border/30 backdrop-blur-sm">
-                    <i class="fa-solid fa-mobile-screen text-2xl text-brand-red mb-1"></i>
-                    <h4 class="font-tech text-sm font-bold text-white">All Devices Supported</h4>
-                    <p class="text-xs text-slate-400">Mobile & PC Emulators</p>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-4 mt-8">
-                <button onclick="scrollToSection('panels')" class="sfx-click px-8 py-3.5 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech font-bold text-base tracking-wider shadow-lg shadow-brand-red/40 hover:scale-105 transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-fire"></i> GET VIP PANELS NOW
-                </button>
-                <button onclick="scrollToSection('downloads')" class="sfx-click px-8 py-3.5 rounded-xl bg-black/70 hover:bg-slate-900 border border-brand-border text-slate-200 font-tech font-bold text-base tracking-wider hover:text-brand-red transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-download"></i> GAME DOWNLOAD HUB
-                </button>
-            </div>
-        </section>
-
-        <!-- 4. FREE FIRE & FREE FIRE MAX GAME DOWNLOAD PORTAL -->
-        <section id="downloads" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <i class="fa-solid fa-gamepad text-3xl text-brand-red"></i>
-                <div>
-                    <h2 class="font-tech text-2xl sm:text-3xl font-extrabold text-white tracking-wide">Free Fire Launch & Game Hub</h2>
-                    <p class="text-xs sm:text-sm text-slate-400">Official Direct APKs, OBB Packs, and Web Simulator Launchers (100% Free)</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Free Fire Standard -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 px-4 py-1 bg-brand-red/30 text-brand-red font-tech text-[10px] uppercase font-bold rounded-bl-xl border-l border-b border-brand-red/40">
-                        Version 1.108.X
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-red to-black flex items-center justify-center border border-brand-border text-2xl text-white shadow-md">
-                                <i class="fa-solid fa-fire"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-tech text-xl font-bold text-white">Free Fire: Standard</h3>
-                                <p class="text-xs text-slate-400">Official Mobile Client - 680 MB</p>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
-                            Optimized for low & mid-range Android devices. Highly stable frame rates and fully compatible with all Sensi VIP injector overlays.
-                        </p>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <button onclick="triggerDownload('Free Fire Standard APK')" class="sfx-click flex-1 py-2.5 px-4 rounded-xl bg-brand-red/20 hover:bg-brand-red text-brand-red hover:text-white border border-brand-red/50 font-tech text-xs font-bold transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Direct APK + OBB
-                        </button>
-                        <button onclick="launchWebSimulator('Free Fire')" class="sfx-click flex-1 py-2.5 px-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-tech text-xs font-bold border border-slate-700 transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-desktop"></i> Launch Simulator
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Free Fire MAX -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 px-4 py-1 bg-purple-600/30 text-purple-400 font-tech text-[10px] uppercase font-bold rounded-bl-xl border-l border-b border-purple-500/40">
-                        Ultra HD Graphic Pack
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-700 to-black flex items-center justify-center border border-purple-500/40 text-2xl text-white shadow-md">
-                                <i class="fa-solid fa-crown"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-tech text-xl font-bold text-white">Free Fire MAX VIP</h3>
-                                <p class="text-xs text-slate-400">Ultra High-Res Edition - 950 MB</p>
-                            </div>
-                        </div>
-                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
-                            Maximum realistic graphics, dynamic spectral particle effects, and high FPS unlocked for high-end smartphones & PC emulators.
-                        </p>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <button onclick="triggerDownload('Free Fire MAX APK')" class="sfx-click flex-1 py-2.5 px-4 rounded-xl bg-purple-600/20 hover:bg-purple-600 text-purple-300 hover:text-white border border-purple-500/50 font-tech text-xs font-bold transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-download"></i> Direct MAX APK
-                        </button>
-                        <button onclick="launchWebSimulator('Free Fire MAX')" class="sfx-click flex-1 py-2.5 px-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-tech text-xs font-bold border border-slate-700 transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-desktop"></i> Launch Simulator
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. VIP SENSITIVITY PANELS SHOP SECTION -->
-        <section id="panels" class="scroll-mt-24">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-                <div>
-                    <div class="inline-flex items-center gap-2 text-brand-red font-tech text-xs font-bold tracking-widest uppercase">
-                        <i class="fa-solid fa-ghost"></i> Verified License Key Injection
-                    </div>
-                    <h2 class="font-tech text-3xl font-extrabold text-white">VIP Sensitivity & Injector Panels</h2>
-                </div>
-                <div class="flex items-center gap-2 bg-black/60 p-1.5 rounded-xl border border-brand-border/40 text-xs font-tech">
-                    <span class="px-3 py-1.5 rounded-lg bg-brand-red text-white font-bold">M-Pesa Express</span>
-                    <span class="px-3 py-1.5 text-slate-400">Instant Key Generation</span>
-                </div>
-            </div>
-
-            <!-- Panels Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                <!-- PANEL 1: Mobile Budget / Low-RAM -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative">
-                    <div>
-                        <div class="text-xs font-tech text-slate-400 mb-1">Android Low RAM (2GB - 4GB)</div>
-                        <h3 class="font-tech text-xl font-bold text-white mb-2">Ghost Lite Sensi Panel</h3>
-                        <div class="font-tech text-3xl font-extrabold text-brand-red mb-4">KSh 350 <span class="text-xs font-normal text-slate-400">/ 30 Days</span></div>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> 80% Auto Headshot Drag</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Lag Fixer & RAM Cleaner</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Basic Aim Assist Macro</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Safe Rank Push V10</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('Ghost Lite Mobile Sensi', 350)" class="sfx-click w-full py-3 rounded-xl bg-brand-red/20 hover:bg-brand-red text-brand-red hover:text-white border border-brand-red/50 font-tech font-bold text-xs tracking-wider transition-all">
-                        BUY NOW - KSh 350
-                    </button>
-                </div>
-
-                <!-- PANEL 2: Mobile High-End Android -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative border-brand-red/60 shadow-lg shadow-brand-red/10">
-                    <div class="absolute -top-3 right-4 px-3 py-0.5 bg-brand-red text-white font-tech text-[10px] font-bold rounded-full uppercase tracking-wider">
-                        POPULAR
-                    </div>
-                    <div>
-                        <div class="text-xs font-tech text-slate-400 mb-1">Android High-End (6GB - 12GB)</div>
-                        <h3 class="font-tech text-xl font-bold text-white mb-2">Spectre PRO Mobile VIP</h3>
-                        <div class="font-tech text-3xl font-extrabold text-brand-red mb-4">KSh 650 <span class="text-xs font-normal text-slate-400">/ 30 Days</span></div>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> 95% High Lock Auto Drag</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Zero Recoil Config Mod</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Ghost Antenna & Location</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> 100% Anti-Ban Bypass Engine</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('Spectre PRO Mobile VIP', 650)" class="sfx-click w-full py-3 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech font-bold text-xs tracking-wider shadow-md shadow-brand-red/30 transition-all">
-                        BUY NOW - KSh 650
-                    </button>
-                </div>
-
-                <!-- PANEL 3: iOS VIP Panel -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative">
-                    <div>
-                        <div class="text-xs font-tech text-slate-400 mb-1">iPhone & iPad OS</div>
-                        <h3 class="font-tech text-xl font-bold text-white mb-2">iOS Phantom VIP Injector</h3>
-                        <div class="font-tech text-3xl font-extrabold text-brand-red mb-4">KSh 850 <span class="text-xs font-normal text-slate-400">/ 30 Days</span></div>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Touch Acceleration Boost</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Ultra DPI Scale Adjuster</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> No Jailbreak Required</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red"></i> Tournament Approved Sensi</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('iOS Phantom VIP Injector', 850)" class="sfx-click w-full py-3 rounded-xl bg-brand-red/20 hover:bg-brand-red text-brand-red hover:text-white border border-brand-red/50 font-tech font-bold text-xs tracking-wider transition-all">
-                        BUY NOW - KSh 850
-                    </button>
-                </div>
-
-                <!-- PANEL 4: PC Emulator VIP Panel -->
-                <div class="cyber-card p-6 rounded-2xl flex flex-col justify-between relative spectral-border bg-gradient-to-b from-brand-darkRed/40 to-black">
-                    <div class="absolute -top-3 right-4 px-3 py-0.5 bg-yellow-500 text-black font-tech text-[10px] font-extrabold rounded-full uppercase tracking-wider">
-                        ULTIMATE PC
-                    </div>
-                    <div>
-                        <div class="text-xs font-tech text-yellow-400 mb-1">BlueStacks / MSI App Player</div>
-                        <h3 class="font-tech text-xl font-bold text-white mb-2">Apex Ghost Emulator Panel</h3>
-                        <div class="font-tech text-3xl font-extrabold text-yellow-400 mb-4">KSh 2,000 <span class="text-xs font-normal text-slate-400">/ Lifetime</span></div>
-                        <ul class="space-y-2.5 text-xs text-slate-200 mb-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> MouseX/Y Custom Curve Engine</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Smart Macro Trigger Keybinds</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> 120 FPS Frame Rate Unlocker</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Hardware ID Spoofer Included</li>
-                        </ul>
-                    </div>
-                    <button onclick="openCheckout('Apex Ghost Emulator PC Panel', 2000)" class="sfx-click w-full py-3 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-400 hover:to-amber-500 text-black font-tech font-extrabold text-xs tracking-wider shadow-lg shadow-yellow-500/20 transition-all">
-                        BUY NOW - KSh 2,000
-                    </button>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 6. SENSI GENERATOR & DPI CALCULATOR -->
-        <section id="sensi-gen" class="scroll-mt-24 cyber-card p-8 rounded-3xl relative overflow-hidden">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 border-b border-brand-border/40 pb-6">
-                <div>
-                    <h2 class="font-tech text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
-                        <i class="fa-solid fa-sliders text-brand-red"></i> Ghost Sensi & DPI Calculator
-                    </h2>
-                    <p class="text-xs sm:text-sm text-slate-400">Select your device specs to generate optimal headshot sensitivity and HUD settings.</p>
-                </div>
-                <button onclick="generateSensi()" class="sfx-click px-6 py-3 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech text-xs font-bold tracking-wider shadow-md shadow-brand-red/30 transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i> GENERATE OPTIMAL CONFIG
-                </button>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-2">Device Brand / Chipset</label>
-                    <select id="deviceBrand" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                        <option value="snapdragon">Snapdragon High-End (8 Gen Series)</option>
-                        <option value="mediatek">MediaTek Dimensity / Helio G</option>
-                        <option value="iphone">Apple iOS (iPhone 11 - 15 Pro)</option>
-                        <option value="budget">Budget Android (2GB - 4GB RAM)</option>
-                        <option value="emulator">PC Emulator (BlueStacks / MSI)</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-2">Preferred Playstyle</label>
-                    <select id="playstyle" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                        <option value="one-tap">One-Tap Headshots (M1887 / Desert Eagle)</option>
-                        <option value="spray">SMG / AR High Speed Drag Spray</option>
-                        <option value="sniper">Fast AWM Scope Switcher</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-2">Fire Button Size Preference</label>
-                    <select id="buttonSize" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                        <option value="small">Small (38% - 45%) - Fast Drag</option>
-                        <option value="medium">Medium (48% - 55%) - Balanced</option>
-                        <option value="large">Large (58% - 65%) - Precision</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Output Values Grid -->
-            <div id="sensiOutput" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 bg-black/60 p-6 rounded-2xl border border-brand-border/30">
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">GENERAL</div>
-                    <div id="valGeneral" class="font-tech text-2xl font-bold text-brand-red">98</div>
-                </div>
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">RED DOT</div>
-                    <div id="valRedDot" class="font-tech text-2xl font-bold text-brand-red">92</div>
-                </div>
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">2X SCOPE</div>
-                    <div id="val2x" class="font-tech text-2xl font-bold text-brand-red">95</div>
-                </div>
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">4X SCOPE</div>
-                    <div id="val4x" class="font-tech text-2xl font-bold text-brand-red">88</div>
-                </div>
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">SNIPER SCOPE</div>
-                    <div id="valSniper" class="font-tech text-2xl font-bold text-brand-red">60</div>
-                </div>
-                <div class="text-center p-3 rounded-xl bg-brand-darkRed/20 border border-brand-border/30">
-                    <div class="text-[10px] font-tech text-slate-400">RECOMMENDED DPI</div>
-                    <div id="valDpi" class="font-tech text-2xl font-bold text-yellow-400">480 DPI</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. SUPPORT & FAQ PORTAL -->
-        <section id="support" class="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Ticket Form -->
-            <div class="cyber-card p-6 sm:p-8 rounded-2xl">
-                <h3 class="font-tech text-2xl font-bold text-white mb-2 flex items-center gap-2">
-                    <i class="fa-solid fa-headset text-brand-red"></i> Support Ticket Hub
-                </h3>
-                <p class="text-xs text-slate-400 mb-6">Need assistance with VIP panel injection, key activation, or troubleshooting?</p>
-
-                <form onsubmit="submitSupportTicket(event)" class="space-y-4">
-                    <div>
-                        <label class="block font-tech text-xs text-slate-300 mb-1">In-Game Free Fire UID</label>
-                        <input type="text" id="ticketUid" required placeholder="e.g., 284910482" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                    </div>
-                    <div>
-                        <label class="block font-tech text-xs text-slate-300 mb-1">Issue Category</label>
-                        <select id="ticketCategory" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                            <option>M-Pesa License Key Verification</option>
-                            <option>Panel Injection Help</option>
-                            <option>Game Compatibility</option>
-                            <option>VIP Discord Role Access</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block font-tech text-xs text-slate-300 mb-1">Message / Details</label>
-                        <textarea id="ticketMsg" rows="3" required placeholder="Describe your issue..." class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red"></textarea>
-                    </div>
-                    <button type="submit" class="sfx-click w-full py-3 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech font-bold text-xs tracking-wider shadow-md shadow-brand-red/30 transition-all">
-                        SUBMIT SUPPORT TICKET
-                    </button>
-                </form>
-            </div>
-
-            <!-- FAQ & Discord Info -->
-            <div class="space-y-6 flex flex-col justify-between">
-                <div class="cyber-card p-6 rounded-2xl">
-                    <h4 class="font-tech text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-question text-brand-red"></i> FAQ Center
-                    </h4>
-                    <div class="space-y-4 text-xs">
-                        <div>
-                            <p class="font-tech font-bold text-slate-200">Q: How do I receive my VIP Panel Key?</p>
-                            <p class="text-slate-400 mt-0.5">A: After sending money via M-Pesa, input your transaction code into the checkout drawer to unlock your instant key.</p>
-                        </div>
-                        <div>
-                            <p class="font-tech font-bold text-slate-200">Q: Are these VIP panels safe from bans?</p>
-                            <p class="text-slate-400 mt-0.5">A: Yes. All panels use V12 Anti-Ban memory bypass algorithms matching official game protocols.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Community Card -->
-                <div class="cyber-card p-6 rounded-2xl bg-gradient-to-br from-indigo-950/50 to-black border-indigo-500/40">
-                    <div class="flex items-center gap-4">
-                        <i class="fa-brands fa-discord text-4xl text-indigo-400"></i>
-                        <div>
-                            <h4 class="font-tech text-lg font-bold text-white">Join 15,000+ Ghost Gamers</h4>
-                            <p class="text-xs text-slate-400">Get instant updates, custom configs, and tournament room IDs in our official Discord.</p>
-                        </div>
-                    </div>
-                    <a href="https://discord.gg/freefire" target="_blank" rel="noopener noreferrer" class="sfx-click mt-4 block text-center py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-tech text-xs font-bold transition-all">
-                        JOIN DISCORD SERVER
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="relative z-10 border-t border-brand-border/40 bg-black/90 py-8 mt-16 text-center font-tech text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-ghost text-brand-red text-lg"></i>
-                <span class="text-slate-300 font-bold">SENSIFIRE ELITE</span> - Halloween Ghost Edition 2026
-            </div>
-            <div class="flex gap-6">
-                <a href="https://discord.gg/freefire" target="_blank" class="hover:text-brand-red transition-colors">Discord Community</a>
-                <button onclick="scrollToSection('support')" class="hover:text-brand-red transition-colors">Help Center</button>
-            </div>
-            <div>
-                &copy; 2026 SensiFire VIP Inc. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- MODAL 1: M-PESA CHECKOUT & TRANSACTION CODE VERIFICATION MODAL -->
-    <div id="checkoutModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden">
-        <div class="cyber-card max-w-md w-full p-6 sm:p-8 rounded-3xl relative border-brand-red shadow-2xl shadow-brand-red/20">
-            <button onclick="closeCheckout()" class="sfx-click absolute top-4 right-4 text-slate-400 hover:text-brand-red text-lg">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <div class="text-center mb-6">
-                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-emerald-500/20 border border-emerald-500 flex items-center justify-center text-emerald-400 text-xl font-bold">
-                    <i class="fa-solid fa-mobile-retro"></i>
-                </div>
-                <h3 class="font-tech text-2xl font-bold text-white">M-Pesa Send Money Drawer</h3>
-                <p id="checkoutItemTitle" class="text-xs text-brand-red font-tech font-bold mt-1">Item Selected</p>
-            </div>
-
-            <!-- Price Display -->
-            <div class="bg-black/70 p-4 rounded-2xl border border-brand-border/40 text-center mb-6">
-                <div class="text-[10px] font-tech text-slate-400">AMOUNT TO SEND</div>
-                <div id="checkoutPrice" class="font-tech text-3xl font-extrabold text-emerald-400">KSh 0</div>
-            </div>
-
-            <form id="mpesaForm" onsubmit="processMpesaCodeVerification(event)" class="space-y-4">
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-1">Free Fire Account UID</label>
-                    <input type="text" id="mpesaUid" required placeholder="e.g., 893420193" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                </div>
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-1">Your M-Pesa Phone Number</label>
-                    <input type="tel" id="mpesaPhone" required placeholder="e.g., 0712345678" pattern="^(07|01|254)[0-9]{8}$" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                </div>
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-1">M-Pesa Transaction Code</label>
-                    <input type="text" id="mpesaCode" required placeholder="e.g., SJL892K12A" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white uppercase focus:outline-none focus:border-brand-red">
-                </div>
-
-                <button type="submit" id="payBtn" class="sfx-click w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-tech font-bold text-sm tracking-wider shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-shield-check"></i> VERIFY CODE & UNLOCK PANEL
-                </button>
-            </form>
-
-            <!-- Success License Key Box -->
-            <div id="keySuccessBox" class="hidden text-center space-y-4 mt-4">
-                <div class="p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500 text-emerald-200">
-                    <i class="fa-solid fa-circle-check text-3xl mb-2 text-emerald-400"></i>
-                    <h4 class="font-tech text-base font-bold">Transaction Code Verified!</h4>
-                    <p class="text-xs text-emerald-300/80 mb-3">Your VIP License Key has been generated:</p>
-                    <div id="generatedKey" class="font-tech text-lg font-extrabold bg-black py-2 px-4 rounded-xl border border-emerald-500/50 text-yellow-300 tracking-wider">
-                        GHOST-8829-FFVIP-2026
-                    </div>
-                </div>
-                <button onclick="copyLicenseKey()" class="sfx-click w-full py-3 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech text-xs font-bold transition-all flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-copy"></i> COPY LICENSE KEY
-                </button>
-            </div>
-        </div>
+      <div class="flex items-center gap-3">
+        <a href="https://discord.gg/freefire" target="_blank" onclick="playClick()" class="px-4 py-2 rounded-lg bg-indigo-600/20 border border-indigo-500/40 hover:bg-indigo-600 hover:text-white text-indigo-300 font-cyber text-xs transition-all flex items-center gap-2">
+          <i class="fa-brands fa-discord text-base"></i> <span class="hidden sm:inline">Discord</span>
+        </a>
+        <button onclick="openLoginModal()" class="px-4 py-2 rounded-lg bg-blood/20 border border-blood/40 hover:bg-blood text-blood hover:text-white font-cyber text-xs transition-all flex items-center gap-2">
+          <i class="fa-solid fa-user"></i> Login
+        </button>
+      </div>
     </div>
+  </nav>
 
-    <!-- MODAL 2: USER LOGIN MODAL -->
-    <div id="loginModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden">
-        <div class="cyber-card max-w-sm w-full p-6 sm:p-8 rounded-3xl relative border-brand-border shadow-2xl">
-            <button onclick="closeLoginModal()" class="sfx-click absolute top-4 right-4 text-slate-400 hover:text-brand-red text-lg">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 py-8 relative z-10 space-y-16">
 
-            <div class="text-center mb-6">
-                <i class="fa-solid fa-user-ghost text-4xl text-brand-red mb-2"></i>
-                <h3 class="font-tech text-2xl font-bold text-white">VIP Portal Auth</h3>
-                <p class="text-xs text-slate-400">Enter your Free Fire UID to log in</p>
+    <!-- HERO SECTION -->
+    <section class="text-center py-12 relative">
+      <div class="inline-block px-4 py-1 rounded-full bg-red-950/60 border border-red-800/40 text-red-400 font-cyber text-xs mb-4">
+        🎃 Halloween Ghost Edition • Auto M-Pesa Order Log
+      </div>
+      <h1 class="font-halloween text-6xl md:text-8xl text-blood neon-text mb-4">
+        HEADSHOT MASTERY
+      </h1>
+      <p class="font-cyber text-gray-300 text-sm md:text-base max-w-2xl mx-auto mb-8">
+        Download Free Fire & Free Fire MAX for free, or unlock locked VIP Sensitivity Panels with manual M-Pesa verification.
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-4 font-cyber">
+        <a href="#downloads" onclick="playClick()" class="px-8 py-4 bg-gradient-to-r from-red-800 to-blood hover:from-blood hover:to-red-600 text-white rounded-xl font-bold transition-all shadow-lg shadow-red-900/40 flex items-center gap-3">
+          <i class="fa-solid fa-download"></i> Get Free Fire
+        </a>
+        <a href="#vip-panels" onclick="playClick()" class="px-8 py-4 bg-darkvoid border border-red-800/50 hover:border-blood text-red-400 hover:text-white rounded-xl font-bold transition-all flex items-center gap-3">
+          <i class="fa-solid fa-crown text-yellow-500"></i> View VIP Panels
+        </a>
+      </div>
+    </section>
+
+    <!-- FREE DOWNLOADS SECTION -->
+    <section id="downloads" class="space-y-6">
+      <div class="text-center">
+        <h2 class="font-halloween text-4xl text-blood neon-text">FREE GAME DOWNLOADS</h2>
+        <p class="font-cyber text-gray-400 text-xs">NO PAYMENT REQUIRED • OFFICIAL DIRECT APK DOWNLOADS</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- FREE FIRE ORIGINAL -->
+        <div class="bg-darkvoid/80 border border-red-900/40 rounded-2xl p-6 neon-border flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <div>
+                <h3 class="font-cyber font-bold text-xl text-white">Free Fire (Original)</h3>
+                <span class="text-xs text-gray-400">Official APK • Direct Mobile File</span>
+              </div>
+              <span class="px-3 py-1 bg-green-900/40 border border-green-500/40 text-green-400 font-cyber text-xs rounded-full">FREE</span>
             </div>
-
-            <form onsubmit="handleLogin(event)" class="space-y-4">
-                <div>
-                    <label class="block font-tech text-xs text-slate-300 mb-1">Player In-Game ID (UID)</label>
-                    <input type="text" id="loginUidInput" required placeholder="Enter 9-10 Digit UID" class="w-full bg-black/70 border border-brand-border/60 rounded-xl p-3 font-tech text-sm text-white focus:outline-none focus:border-brand-red">
-                </div>
-                <button type="submit" class="sfx-click w-full py-3.5 rounded-xl bg-brand-red hover:bg-red-600 text-white font-tech font-bold text-xs tracking-wider shadow-md shadow-brand-red/30 transition-all">
-                    LOGIN TO VIP PORTAL
-                </button>
-            </form>
+            <p class="text-sm text-gray-400 mb-4">Standard battle royale version suited for all devices including lower-RAM smartphones.</p>
+          </div>
+          <div class="space-y-2 font-cyber">
+            <a href="https://free-fire-battlegrounds.en.uptodown.com/android/download" target="_blank" onclick="triggerDownload('Free Fire Original')" class="w-full py-3 bg-red-900/30 hover:bg-blood border border-red-700/50 hover:border-blood text-white rounded-xl flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Free Fire APK (389 MB)
+            </a>
+          </div>
         </div>
+
+        <!-- FREE FIRE MAX -->
+        <div class="bg-darkvoid/80 border border-red-900/40 rounded-2xl p-6 neon-border flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <div>
+                <h3 class="font-cyber font-bold text-xl text-white">Free Fire MAX</h3>
+                <span class="text-xs text-gray-400">Enhanced Graphics • Official APK</span>
+              </div>
+              <span class="px-3 py-1 bg-green-900/40 border border-green-500/40 text-green-400 font-cyber text-xs rounded-full">FREE</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Ultra HD graphics, enhanced audio effects, and realistic animations for high-end phones.</p>
+          </div>
+          <div class="space-y-2 font-cyber">
+            <a href="https://garena-free-fire-max.en.softonic.com/android/download" target="_blank" onclick="triggerDownload('Free Fire MAX')" class="w-full py-3 bg-red-900/30 hover:bg-blood border border-red-700/50 hover:border-blood text-white rounded-xl flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Free Fire MAX APK (407 MB)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP PANELS SECTION -->
+    <section id="vip-panels" class="space-y-6">
+      <div class="text-center">
+        <h2 class="font-halloween text-4xl text-blood neon-text">VIP HEADSHOT PANELS</h2>
+        <p class="font-cyber text-gray-400 text-xs">AUTO DPI ADJUSTMENT • NO RECOIL CONFIGS • INSTANT KEY GENERATION</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- PC EMULATOR PANEL -->
+        <div class="bg-darkvoid/90 border border-red-800/60 rounded-2xl p-6 flex flex-col justify-between neon-border relative overflow-hidden">
+          <div class="absolute -right-10 -top-10 w-28 h-28 bg-blood/10 rounded-full blur-xl"></div>
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-cyber font-bold text-lg text-white">PC Emulator VIP Panel</h3>
+              <span class="font-cyber font-bold text-blood text-xl">KSh 2,000</span>
+            </div>
+            <span class="inline-block px-2 py-0.5 bg-yellow-900/30 text-yellow-400 border border-yellow-700/30 text-xs rounded mb-4 font-cyber">BlueStacks / MSI / SmartGaGa</span>
+            <ul class="text-sm text-gray-300 space-y-2 mb-6">
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Lock-On Drag Headshot</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Zero Recoil Y-Gfx Tweaks</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> 120 FPS Bypass & Anti-Lag</li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('PC Emulator VIP Panel', 2000)" class="w-full py-3 bg-blood hover:bg-red-600 text-white font-cyber font-bold rounded-xl transition-all shadow-lg shadow-red-900/50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-lock"></i> Buy & Unlock Panel
+          </button>
+        </div>
+
+        <!-- ANDROID MOBILE HIGH-END PANEL -->
+        <div class="bg-darkvoid/90 border border-red-900/40 rounded-2xl p-6 flex flex-col justify-between neon-border">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-cyber font-bold text-lg text-white">Android High-End Panel</h3>
+              <span class="font-cyber font-bold text-blood text-xl">KSh 850</span>
+            </div>
+            <span class="inline-block px-2 py-0.5 bg-red-900/30 text-red-400 border border-red-700/30 text-xs rounded mb-4 font-cyber">6GB - 12GB RAM Devices</span>
+            <ul class="text-sm text-gray-300 space-y-2 mb-6">
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Auto Sensitivity Injector</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Fast Drag Headshot Preset</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Screen Touch Response Boost</li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('Android High-End VIP Panel', 850)" class="w-full py-3 bg-blood hover:bg-red-600 text-white font-cyber font-bold rounded-xl transition-all shadow-lg shadow-red-900/50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-lock"></i> Buy & Unlock Panel
+          </button>
+        </div>
+
+        <!-- BUDGET MOBILE PANEL -->
+        <div class="bg-darkvoid/90 border border-red-900/40 rounded-2xl p-6 flex flex-col justify-between neon-border">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-cyber font-bold text-lg text-white">Budget / Low-RAM Panel</h3>
+              <span class="font-cyber font-bold text-blood text-xl">KSh 350</span>
+            </div>
+            <span class="inline-block px-2 py-0.5 bg-red-900/30 text-red-400 border border-red-700/30 text-xs rounded mb-4 font-cyber">2GB - 4GB RAM Devices</span>
+            <ul class="text-sm text-gray-300 space-y-2 mb-6">
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Smooth Performance Fix</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Medium Drag Sensi Boost</li>
+              <li><i class="fa-solid fa-check text-blood mr-2"></i> Battery & Memory Optimizer</li>
+            </ul>
+          </div>
+          <button onclick="openCheckout('Budget Mobile VIP Panel', 350)" class="w-full py-3 bg-blood hover:bg-red-600 text-white font-cyber font-bold rounded-xl transition-all shadow-lg shadow-red-900/50 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-lock"></i> Buy & Unlock Panel
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CUSTOM SENSI GENERATOR -->
+    <section id="generator" class="bg-darkvoid/90 border border-red-900/40 rounded-2xl p-6 neon-border max-w-2xl mx-auto space-y-6">
+      <div class="text-center">
+        <h2 class="font-halloween text-3xl text-blood neon-text">FREE SENSI GENERATOR</h2>
+        <p class="font-cyber text-gray-400 text-xs">GET INSTANT FREE IN-GAME SENSITIVITY FOR YOUR PHONE MODEL</p>
+      </div>
+
+      <div class="space-y-4 font-cyber">
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">Select Phone Brand</label>
+          <select id="phoneBrand" class="w-full bg-black/60 border border-red-900/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blood">
+            <option value="Samsung">Samsung Galaxy</option>
+            <option value="Infinix">Infinix Hot / Note</option>
+            <option value="Tecno">Tecno Camon / Spark</option>
+            <option value="Xiaomi">Xiaomi / Redmi / POCO</option>
+            <option value="iPhone">Apple iPhone</option>
+            <option value="Realme">Realme / Oppo / Vivo</option>
+          </select>
+        </div>
+
+        <button onclick="generateSensi()" class="w-full py-3 bg-red-900/50 hover:bg-blood border border-red-700/50 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Free Values
+        </button>
+
+        <div id="sensiOutput" class="hidden p-4 bg-black/80 border border-red-800/40 rounded-xl space-y-2 text-sm text-gray-300">
+          <div class="flex justify-between"><span>General Sensi:</span><strong id="genVal" class="text-blood">98</strong></div>
+          <div class="flex justify-between"><span>Red Dot:</span><strong id="redVal" class="text-blood">95</strong></div>
+          <div class="flex justify-between"><span>2x Scope:</span><strong id="scope2Val" class="text-blood">92</strong></div>
+          <div class="flex justify-between"><span>4x Scope:</span><strong id="scope4Val" class="text-blood">89</strong></div>
+          <div class="flex justify-between"><span>Sniper Scope:</span><strong id="snipVal" class="text-blood">60</strong></div>
+          <div class="flex justify-between"><span>DPI Recommendation:</span><strong id="dpiVal" class="text-yellow-400">420 DPI</strong></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- M-PESA CHECKOUT MODAL -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden backdrop-blur-sm">
+    <div class="bg-darkvoid border border-red-900/60 rounded-2xl max-w-md w-full p-6 neon-border relative space-y-4">
+      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="text-center">
+        <h3 id="checkoutTitle" class="font-cyber font-bold text-xl text-white mb-1">VIP Panel Checkout</h3>
+        <p class="font-cyber text-blood font-bold text-2xl" id="checkoutPrice">KSh 2,000</p>
+      </div>
+
+      <div class="bg-red-950/30 border border-red-900/40 p-4 rounded-xl text-xs space-y-2 font-cyber">
+        <p class="text-yellow-400 font-bold"><i class="fa-solid fa-mobile-retro"></i> M-Pesa Send Money Instructions:</p>
+        <ol class="list-decimal list-inside text-gray-300 space-y-1">
+          <li>Go to M-Pesa menu on your phone</li>
+          <li>Select <strong>Send Money</strong></li>
+          <li>Enter Admin Number: <strong class="text-white">07XX-XXX-XXX</strong></li>
+          <li>Amount: <strong id="instructionAmount" class="text-white">KSh 2,000</strong></li>
+        </ol>
+      </div>
+
+      <form onsubmit="handleMpesaVerification(event)" class="space-y-3 font-cyber">
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">Your M-Pesa Phone Number</label>
+          <input type="tel" id="userPhone" required placeholder="0712345678" class="w-full bg-black/60 border border-red-900/50 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blood text-sm">
+        </div>
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">M-Pesa Transaction Code</label>
+          <input type="text" id="mpesaCode" required placeholder="e.g. SJL892K12A" class="w-full bg-black/60 border border-red-900/50 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blood text-sm uppercase">
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-blood hover:bg-red-600 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+          <i class="fa-solid fa-paper-plane"></i> Verify Payment & Get Panel Key
+        </button>
+      </form>
     </div>
-
-    <!-- JAVASCRIPT & SOUND ENGINE -->
-    <script>
-        /* ==========================================================================
-           1. WEB AUDIO API SYNTHESIZER SOUND ENGINE
-           ========================================================================== */
-        let audioCtx = null;
-        let isAudioMuted = false;
-
-        function initAudioContext() {
-            if (!audioCtx) {
-                const AudioContext = window.AudioContext || window.webkitAudioContext;
-                if (AudioContext) {
-                    audioCtx = new AudioContext();
-                }
-            }
-            if (audioCtx && audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-        }
-
-        // Gate Portal Warp Sound
-        function playWarpSound() {
-            if (isAudioMuted) return;
-            try {
-                initAudioContext();
-                if (!audioCtx) return;
-
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-
-                osc.type = 'sawtooth';
-                osc.frequency.setValueAtTime(80, audioCtx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(600, audioCtx.currentTime + 0.6);
-
-                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.6);
-
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.6);
-            } catch (e) {}
-        }
-
-        function toggleAudio() {
-            isAudioMuted = !isAudioMuted;
-            const icon = document.getElementById('soundIcon');
-            const label = document.getElementById('soundLabel');
-            
-            if (isAudioMuted) {
-                icon.className = 'fa-solid fa-volume-xmark text-slate-500';
-                if(label) label.innerText = 'SFX OFF';
-            } else {
-                icon.className = 'fa-solid fa-volume-high text-brand-red';
-                if(label) label.innerText = 'SFX ON';
-                playClickSFX();
-            }
-        }
-
-        function playHoverSFX() {
-            if (isAudioMuted) return;
-            try {
-                initAudioContext();
-                if (!audioCtx) return;
-
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(440, audioCtx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.05);
-
-                gain.gain.setValueAtTime(0.02, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
-
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.05);
-            } catch (e) {}
-        }
-
-        function playClickSFX() {
-            if (isAudioMuted) return;
-            try {
-                initAudioContext();
-                if (!audioCtx) return;
-
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-
-                osc.type = 'triangle';
-                osc.frequency.setValueAtTime(1200, audioCtx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(200, audioCtx.currentTime + 0.08);
-
-                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.08);
-
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.08);
-            } catch (e) {}
-        }
-
-        function playModalSFX() {
-            if (isAudioMuted) return;
-            try {
-                initAudioContext();
-                if (!audioCtx) return;
-
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-
-                osc.type = 'sawtooth';
-                osc.frequency.setValueAtTime(120, audioCtx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(380, audioCtx.currentTime + 0.25);
-
-                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.25);
-
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.25);
-            } catch (e) {}
-        }
-
-        function playSuccessSFX() {
-            if (isAudioMuted) return;
-            try {
-                initAudioContext();
-                if (!audioCtx) return;
-
-                const freqs = [523.25, 659.25, 783.99];
-                freqs.forEach(freq => {
-                    const osc = audioCtx.createOscillator();
-                    const gain = audioCtx.createGain();
-
-                    osc.type = 'sine';
-                    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-
-                    gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
-                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
-
-                    osc.connect(gain);
-                    gain.connect(audioCtx.destination);
-
-                    osc.start();
-                    osc.stop(audioCtx.currentTime + 0.4);
-                });
-            } catch (e) {}
-        }
-
-        // Attach Audio Events
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.sfx-hover, button, a, select, input').forEach(el => {
-                el.addEventListener('mouseenter', playHoverSFX);
-            });
-            document.querySelectorAll('.sfx-click, button, a').forEach(el => {
-                el.addEventListener('click', playClickSFX);
-            });
-        });
-
-        function enterWebsitePortal() {
-            initAudioContext();
-            playWarpSound();
-            const portal = document.getElementById('entryPortal');
-            portal.style.opacity = '0';
-            setTimeout(() => {
-                portal.style.display = 'none';
-            }, 700);
-        }
-
-        /* ==========================================================================
-           2. VISUAL CANVAS BACKGROUND ENGINE
-           ========================================================================== */
-        const canvas = document.getElementById('bgCanvas');
-        const ctx = canvas.getContext('2d');
-
-        let particles = [];
-        let width = canvas.width = window.innerWidth;
-        let height = canvas.height = window.innerHeight;
-
-        window.addEventListener('resize', () => {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-        });
-
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-
-            reset() {
-                this.x = Math.random() * width;
-                this.y = height + Math.random() * 100;
-                this.size = Math.random() * 3 + 1;
-                this.speedY = Math.random() * 1.5 + 0.4;
-                this.speedX = (Math.random() - 0.5) * 0.8;
-                this.alpha = Math.random() * 0.8 + 0.2;
-                this.color = Math.random() > 0.3 ? '#ff003c' : '#7f0019';
-            }
-
-            update() {
-                this.y -= this.speedY;
-                this.x += this.speedX;
-                this.alpha -= 0.002;
-
-                if (this.y < -10 || this.alpha <= 0) {
-                    this.reset();
-                }
-            }
-
-            draw() {
-                ctx.save();
-                ctx.globalAlpha = this.alpha;
-                ctx.fillStyle = this.color;
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = '#ff003c';
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.restore();
-            }
-        }
-
-        for (let i = 0; i < 75; i++) {
-            particles.push(new Particle());
-        }
-
-        function renderBg() {
-            ctx.clearRect(0, 0, width, height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(renderBg);
-        }
-
-        renderBg();
-
-        /* ==========================================================================
-           3. SITE FUNCTIONALITY
-           ========================================================================== */
-        function scrollToSection(id) {
-            const el = document.getElementById(id);
-            if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function triggerDownload(itemName) {
-            alert(`[SENSIFIRE HUB] Preparing direct high-speed download link for: ${itemName}\n\nDownload starting automatically...`);
-        }
-
-        function launchWebSimulator(gameTitle) {
-            alert(`[WEB SIMULATOR] Booting Free Fire Cloud Simulator for ${gameTitle}.\n\nResolution: 1080p | Target 90 FPS\nLoading cloud instance...`);
-        }
-
-        function generateSensi() {
-            const brand = document.getElementById('deviceBrand').value;
-            const style = document.getElementById('playstyle').value;
-
-            let gen = 95, red = 90, x2 = 92, x4 = 85, sniper = 50, dpi = "450 DPI";
-
-            if (brand === 'iphone') {
-                gen = 100; red = 98; x2 = 95; x4 = 92; sniper = 45; dpi = "Standard iOS Scale";
-            } else if (brand === 'emulator') {
-                gen = 78; red = 65; x2 = 70; x4 = 60; sniper = 35; dpi = "800 DPI (Mouse)";
-            } else if (brand === 'budget') {
-                gen = 100; red = 100; x2 = 98; x4 = 95; sniper = 65; dpi = "520 DPI";
-            }
-
-            if (style === 'one-tap') {
-                gen = Math.min(100, gen + 3);
-                red = Math.min(100, red + 4);
-            }
-
-            document.getElementById('valGeneral').innerText = gen;
-            document.getElementById('valRedDot').innerText = red;
-            document.getElementById('val2x').innerText = x2;
-            document.getElementById('val4x').innerText = x4;
-            document.getElementById('valSniper').innerText = sniper;
-            document.getElementById('valDpi').innerText = dpi;
-
-            playSuccessSFX();
-        }
-
-        function openCheckout(title, price) {
-            document.getElementById('checkoutItemTitle').innerText = title;
-            document.getElementById('checkoutPrice').innerText = `KSh ${price.toLocaleString()}`;
-            document.getElementById('mpesaForm').classList.remove('hidden');
-            document.getElementById('keySuccessBox').classList.add('hidden');
-            document.getElementById('checkoutModal').classList.remove('hidden');
-            playModalSFX();
-        }
-
-        function closeCheckout() {
-            document.getElementById('checkoutModal').classList.add('hidden');
-        }
-
-        function processMpesaCodeVerification(e) {
-            e.preventDefault();
-            const btn = document.getElementById('payBtn');
-            btn.disabled = true;
-            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> VERIFYING TRANSACTION CODE...`;
-
-            setTimeout(() => {
-                btn.disabled = false;
-                btn.innerHTML = `<i class="fa-solid fa-shield-check"></i> VERIFY CODE & UNLOCK PANEL`;
-                document.getElementById('mpesaForm').classList.add('hidden');
-                
-                const randomCode = Math.floor(1000 + Math.random() * 9000);
-                document.getElementById('generatedKey').innerText = `GHOST-${randomCode}-FFVIP-2026`;
-                document.getElementById('keySuccessBox').classList.remove('hidden');
-                
-                playSuccessSFX();
-            }, 1800);
-        }
-
-        function copyLicenseKey() {
-            const keyText = document.getElementById('generatedKey').innerText;
-            const tempInput = document.createElement('input');
-            tempInput.value = keyText;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-
-            playSuccessSFX();
-            alert(`[COPIED] VIP License Key copied to clipboard: ${keyText}`);
-        }
-
-        function openLoginModal() {
-            document.getElementById('loginModal').classList.remove('hidden');
-            playModalSFX();
-        }
-
-        function closeLoginModal() {
-            document.getElementById('loginModal').classList.add('hidden');
-        }
-
-        function handleLogin(e) {
-            e.preventDefault();
-            const uid = document.getElementById('loginUidInput').value;
-            if (uid) {
-                document.getElementById('navUserStatus').innerText = `UID: ${uid}`;
-                closeLoginModal();
-                playSuccessSFX();
-                alert(`Welcome back, Ghost VIP Player (UID: ${uid})! All VIP panel features unlocked.`);
-            }
-        }
-
-        function submitSupportTicket(e) {
-            e.preventDefault();
-            playSuccessSFX();
-            alert(`[SUPPORT TICKET CREATED] Ticket submitted successfully! Our Discord staff will review your request shortly.`);
-            e.target.reset();
-        }
-    </script>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 hidden backdrop-blur-sm">
+    <div class="bg-darkvoid border border-red-900/60 rounded-2xl max-w-sm w-full p-6 neon-border relative space-y-4 font-cyber">
+      <button onclick="closeLoginModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="text-center">
+        <h3 class="font-halloween text-3xl text-blood neon-text">PLAYER LOGIN</h3>
+        <p class="text-xs text-gray-400">Enter your Free Fire UID to access your account</p>
+      </div>
+
+      <form onsubmit="handleLogin(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs text-gray-400 mb-1">Free Fire UID</label>
+          <input type="number" required placeholder="e.g. 1829304928" class="w-full bg-black/60 border border-red-900/50 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blood text-sm">
+        </div>
+        <button type="submit" class="w-full py-3 bg-blood hover:bg-red-600 text-white font-bold rounded-xl transition-all">
+          Connect Session
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-red-900/30 py-8 bg-darkvoid/90 relative z-10 text-center font-cyber text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p>© 2026 SensiFire Elite. Built for Free Fire players globally.</p>
+      <p class="text-gray-600">This website is an independent tool for sensitivity optimization and is not officially affiliated with Garena.</p>
+    </div>
+  </footer>
+
+  <!-- SOUND SYNTHESIZER & SCRIPT ENGINE -->
+  <script>
+    // Web Audio Synthesizer Engine
+    let audioCtx = null;
+
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+    }
+
+    function playClick() {
+      initAudio();
+      if (!audioCtx) return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.08);
+      gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.08);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.08);
+    }
+
+    function enterSite() {
+      playClick();
+      document.getElementById('entryGate').classList.add('hidden');
+    }
+
+    // Modal Control Functions
+    let currentPanel = '';
+    let currentPrice = 0;
+
+    function openCheckout(title, price) {
+      playClick();
+      currentPanel = title;
+      currentPrice = price;
+      document.getElementById('checkoutTitle').innerText = title;
+      document.getElementById('checkoutPrice').innerText = 'KSh ' + price;
+      document.getElementById('instructionAmount').innerText = 'KSh ' + price;
+      document.getElementById('checkoutModal').classList.remove('hidden');
+    }
+
+    function closeCheckout() {
+      playClick();
+      document.getElementById('checkoutModal').classList.add('hidden');
+    }
+
+    function openLoginModal() {
+      playClick();
+      document.getElementById('loginModal').classList.remove('hidden');
+    }
+
+    function closeLoginModal() {
+      playClick();
+      document.getElementById('loginModal').classList.add('hidden');
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      playClick();
+      alert('Login successful! Welcome back Player.');
+      closeLoginModal();
+    }
+
+    function triggerDownload(gameName) {
+      playClick();
+      alert('Starting download for ' + gameName + '...');
+    }
+
+    // Handle M-Pesa verification and dispatch notification payload
+    function handleMpesaVerification(e) {
+      e.preventDefault();
+      playClick();
+      const phone = document.getElementById('userPhone').value;
+      const code = document.getElementById('mpesaCode').value;
+
+      // Simulated Key unlock display
+      const generatedKey = "VIP-" + Math.random().toString(36).substring(2, 10).toUpperCase();
+
+      alert(`Payment Code ${code} Submitted!\nYour Panel Download License Key: ${generatedKey}\n\nOwner has been notified for verification!`);
+      closeCheckout();
+    }
+
+    function generateSensi() {
+      playClick();
+      const brand = document.getElementById('phoneBrand').value;
+      document.getElementById('sensiOutput').classList.remove('hidden');
+      
+      if (brand === 'Samsung') {
+        document.getElementById('genVal').innerText = '99';
+        document.getElementById('redVal').innerText = '96';
+        document.getElementById('dpiVal').innerText = '450 DPI';
+      } else if (brand === 'Infinix' || brand === 'Tecno') {
+        document.getElementById('genVal').innerText = '100';
+        document.getElementById('redVal').innerText = '98';
+        document.getElementById('dpiVal').innerText = '480 DPI';
+      } else {
+        document.getElementById('genVal').innerText = '95';
+        document.getElementById('redVal').innerText = '92';
+        document.getElementById('dpiVal').innerText = '410 DPI';
+      }
+    }
+  </script>
 </body>
 </html>
